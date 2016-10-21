@@ -1,0 +1,224 @@
+// .display-sidebar{
+// 	display: block !important;
+// }
+
+.mobile-sidebar{
+	@media screen and (max-width: breakpoint(sm)){
+		//max-width: 100% ;
+		z-index: 1500 ;
+	}
+}
+.totalProduct {
+	@include display(none);
+	@media screen and (max-width: breakpoint(sm)){
+		@include display();
+		font-weight: normal;
+		font-size: $font-size-sm;
+	}
+}
+.filter-close-mobile-p {
+	@include display(none);
+	@media screen and (max-width: breakpoint(sm)){
+		position: absolute;
+		right: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		display: block;
+		width: 25px;
+		height: 25px;
+		border: solid 1px red;
+		text-align: center;
+	}
+}
+
+.mobile-filter-container{
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-filter{
+	padding: 0 !important;
+	border-top: solid 1px #ebebeb;
+	.tabs-left {
+		list-style: none;
+	    overflow: auto;
+	    background: #f8f8f8; //review
+	    height: 820px; //review
+	    padding: 0;
+	    margin: 0;
+
+	    >li {
+	    	padding: 0;
+	    	margin: 0;
+	    	border-right: solid 1px #ebebeb; //review
+		    border-bottom: solid 1px #ebebeb; //review
+		    background: #f8f8f8;
+
+		    &.active {
+			    background: #fff; //review
+			    color: $filter_text_primary;
+			    $font-weight: 700;
+			    a {
+			    	color: #333;
+			    	text-decoration: none;
+			    }
+			}
+			&::hover {
+				text-decoration: none;
+			}
+			a {
+				display: block;
+			    font-family: Lato;
+			    font-size: 14px;
+			    font-weight: 700;
+			    letter-spacing: .3px;
+			    line-height: 20px;
+			    padding: 14px 15px;
+			}
+		}
+	}
+	// Tabs
+.nav-tabs {
+  float: left;
+  border-bottom: 0;
+}
+.nav-tabs li {
+  float: none;
+  margin: 0;
+}
+.nav-tabs li a {
+  margin-right: 0;
+  border: 0;
+  background-color: #c0392b;
+}
+.nav-tabs li a:hover {
+  background-color: #e74c3c;
+}
+.nav-tabs .glyphicon {
+  color: #fff;
+}
+.nav-tabs .active .glyphicon {
+  color: #333;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0;
+}
+
+.tab-content {
+  margin-left: 45px;
+}
+.tab-content .tab-pane {
+  display: none;
+  background-color: #fff;
+  padding: 1.6rem;
+  overflow-y: auto;
+}
+.tab-content .active {
+  display: block;
+}
+}
+
+.tab-left-content{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	.tab-pane {
+		background: #fff;
+	    width: 100%;
+	    left: 0;
+	    padding: 15px;
+	    display: none;
+	    height: 100%;
+
+	    &.active{
+	    	display: block;
+	    }
+		.search_category_mobile {
+		    border-radius: 2px;
+		    background-color: #fff;
+		    box-shadow: 0 1px 0 0 rgba(239,239,239,.5);
+		    border: 1px solid #e0e0e0;
+		    padding: 5px;
+		    height: 35px;
+		    margin: 5px 0 8px;
+		    width:100%;
+		}
+		ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			overflow-y: auto;
+		li {
+			margin-bottom: 5px;
+			label {
+				margin-bottom:1px;
+				label {
+				width:18px;
+				height:18px;
+				border: solid 1px #cacece;
+				vertical-align: middle;
+				}
+				input[type="checkbox"]:checked ~ label {
+					@extend %sprite-image;
+					background-position: 3px -159px;
+					//@extend .bg-cv-primary;
+					border: solid 1px $cv_primary;
+				}
+				span {
+					font-weight: 400;
+					font-size: $font-size-sm;
+					color: #727272;
+				}
+			}
+		}
+		}
+	}
+}
+
+.tabe-pane{
+	#category{
+		li a {
+			cursor: pointer;
+		    font-weight: 400;
+		    font-size: 12px;
+		    color: #727272;
+		    letter-spacing: .2px;
+		    line-height: 1.8;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		}
+	}
+}
+
+.regular-checkbox{
+	display: none;
+}
+//  Apply Filter
+.apply-filter {
+    padding: 10px 15px;
+    height: 58px;
+    border-top: solid 1px #ebebeb;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    a {
+	    font-size: 16px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    color: #981937;
+	    &::hover {
+	    	color: #981937;
+	    }
+	    &.applyBtn {
+		    border: 1px solid #e4d2be;
+		    background: #f5f3e8;
+		    border-radius: 2px;
+		    padding: 6px 20px;
+		    letter-spacing: 1px;
+		    margin-right: 10px;
+	    }
+    }
+}

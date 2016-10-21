@@ -1,0 +1,410 @@
+//
+%sprite-image {
+    background-repeat: no-repeat;
+		//background-image: url('http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cv-sprite.1470395060.png');
+		background-image: url('./assets/img/cv-sprite.png');
+		background-size: auto;
+}
+//
+@import 'filters-colors.scss';
+#sidebar {
+	@include background-bg($filter_background_default);
+	padding: 0px;
+	@media screen and (max-width: breakpoint(sm)){
+		display: none;
+		position: fixed;
+		top: 0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		z-index: 1500 !important
+	}
+}
+a {
+	@include text-decoration(none);
+	&:link,
+	&:visited {
+		@include text-color($filter_link_default);
+	}
+	&:hover {
+		@include text-color($filter_link_hover);
+	}
+}
+
+.filter-wrapper {
+	@include nopadding();
+	//@include border-top(solid, $filter_wrapper_border, 1px);
+}
+
+.f-heading {
+	@include text-color($cv-black87);
+	@include margin-top(5px);
+	@include margin-right(0);
+	@include margin-bottom(5px);
+	@include margin-left(0);
+	font-size: $font-size-md;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	font-family: $font-family-ProximaNova;
+	position: relative;
+	@media screen and (max-width: breakpoint(sm)) {
+		padding: 10px;
+		background-color: #981937;
+		color: #fff;
+		margin: 0px;
+		text-align: center;
+		span {
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+
+ul[role=filter] {
+	list-style-type: none;
+	float: left;
+	@include width-percent($w:100%);
+	> li {
+		float: left;
+		@include width-percent($w:100%);
+		border-top: solid 1px $cv-black12;
+		h5 {
+			@include font-face($font-family-ProximaNova);
+			@include text-color($cv-black87);
+			@include font-weight(bold);
+			@include nomargin();
+			@include display(block);
+			@include width-percent($w:100%);
+			@include padding-top(12px);
+			//@include padding-right(15px);
+			@include padding-bottom(12px);
+			//@include padding-left(15px);
+			font-size: $font-size;
+			letter-spacing: 0.3px;
+			float: left;
+			cursor: pointer;
+			> label {
+				width: 100%;
+				margin: 0px;
+				float: left;
+				cursor: pointer;
+				-webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: -moz-none;
+		    -o-user-select: none;
+		    user-select: none;
+				input[type="checkbox"] {
+					display: none;
+					&:checked {
+						&+ span {
+							border: solid 1px $cv-p0;
+							background-color: $cv-p0;
+							@extend %sprite-image;
+							background-position: -113px -13px;
+						}
+					}
+				}
+				> span {
+					float: left;
+          color: $cv-black54;
+					&:nth-of-type(2n+1) {
+						border: solid 1px #ebebeb;
+						width: 15px;
+						height: 15px;
+						margin-right: 10px;
+						border-radius: 2px;
+						// -webkit-transition: all .3s ease;
+						// -moz-transition: all .3s ease;
+						// -ms-transition: all .3s ease;
+						// -o-transition: all .3s ease;
+						// transition: all .3s ease;
+					}
+				}
+			}
+			> span {
+				line-height: 1.2;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: -moz-none;
+				-o-user-select: none;
+				user-select: none;
+				&.icon-arrow {
+					float: right;
+					margin-top: 4px;
+					margin-right: 6px;
+					@extend .icon;
+					-webkit-transition: all .3s ease;
+					-moz-transition: all .3s ease;
+					-ms-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease;
+				}
+				&.cat-title {
+					width: 80%;
+					font-size: $font-size;
+					float: left;
+					> .reset_clear {
+						font-size: $font-size-sm;
+				    line-height: 1.2!important;
+				    letter-spacing: .2px;
+				    font-weight: 400!important;
+				    color: $cv-p6;
+				    width: auto;
+						margin-left: 8px;
+					}
+				}
+			}
+			// > span.delete {
+			// 	@include display(none);
+			// 	float: right;
+			// }
+		}
+
+		> .sub-menu-parent {
+			padding: 0;
+			width: 100%;
+
+			> .menu-search {
+				@include display(none);
+				float: left;
+				@include margin-bottom(15px);
+				> ul {
+					overflow-y: hidden;
+					max-height: 152px;
+					padding: 0;
+					&:hover{
+						overflow-y: auto;
+					}
+				}
+			}
+		}
+	}
+
+	> li.active {
+		h5 {
+			> span.icon-arrow {
+				transform: rotate(180deg);
+			}
+		}
+		> .sub-menu-parent {
+			> .menu-search {
+				@include display(block);
+			}
+		}
+	}
+}
+
+
+.sub-menu-parent {
+	padding: 0;
+	background: 0 0;
+}
+
+
+ul.sub-menu {
+	list-style: none;
+	> li {
+		float: left;
+		width: 100%;
+		margin-bottom: 12px;
+		> label {
+			margin: 0;
+			display: inherit;
+			> label {
+				float: left;
+				border: solid 1px #ebebeb;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				border-radius: 2px;
+				margin-bottom: 2px;
+			}
+			> span {
+				cursor: pointer;
+				font-weight: normal;
+				font-size: $font-size;
+				color: $cv-black54;
+				letter-spacing: 0.2px;
+				line-height: 1.2;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				// > [label-text] {
+				// 	color: $cv-black54;
+				// }
+				> .color {
+					border: solid 1px rgba(0,0,0,0.1);
+					float: left;
+					width: 15px;
+					height: 15px;
+					margin-right: 7.5px;
+					border-radius: 50px;
+				}
+			}
+			> input[type=checkbox] {
+				display: none;
+				&:checked {
+					&+ label {
+						border: solid 1px $cv-p0;
+						background-color: $cv-p0;
+						@extend %sprite-image;
+						background-position: -113px -13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.menu-search {
+	padding: 0px;
+	input {
+		// font-family: Lato;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.75;
+		color: $filter_menusearch_text_default;
+	}
+	.search_category {
+		width: 100%;
+		border-radius: 2px;
+		background-color: $filter_menusearch_cat_bg;
+		box-shadow: 0 1px 0 0 rgba(239,239,239,.5);
+		border: 1px solid $filter_menusearch_cat_border;
+		padding: 5px;
+		height: 35px;
+		margin: 5px 0 8px;
+	}
+}
+
+
+//---------------------------
+// SCROLL BAR
+//---------------------------
+
+.menu-search > ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ffffff;
+}
+.menu-search > ul::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #ffffff;
+}
+
+.menu-search > ul::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	background-color: $cv-p0;
+
+}
+
+
+//-------------------------------
+// CHECKBOX NOT USE NEW DESIGN
+//-------------------------------
+// .checkbox-common {
+// 	.menu-search {
+// 		> ul.sub-menu {
+// 			> li {
+// 				> label {
+// 					> label {
+// 						display: inherit;
+// 						width: 15px;
+// 						height: 15px;
+// 						border: 1px solid $filter_menusearch_check_border;
+// 						border-radius: 0;
+// 						// margin-top: 4px;
+// 						background: $filter_menusearch_check_bg;
+// 					}
+//
+// 					input[type=checkbox] {
+// 						display: none;
+//
+// 						&+label {
+// 							width: 15px;
+// 							height: 15px;
+// 							background-color: #f8f8f8;
+// 						}
+//
+// 						&:checked+label {
+// 							width: 15px;
+// 							height: 15px;
+// 							// @extend .icon;
+// 							// @extend .icon-tick-white-small;
+// 							background-position: -6px -167px;
+// 							@extend .bg-cv-primary;
+// 							border-color: green;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+.sub-menu-color {
+	> li {
+		display: inline;
+		width: 30px;
+		height: 30px;
+		float: left;
+		margin: 0 8px 8px 0;
+
+		label {
+			display: block;
+			height: 100% !important;
+			width: 100% !important;
+			text-align: center;
+			cursor: pointer;
+			margin: 0;
+			border-radius: 2px;
+			border: inherit !important;
+			input[type=checkbox] {
+				display: none;
+
+				&:checked+label {
+					@extend %sprite-image;
+					// background-image: url(http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/check_new.png);
+					// background-repeat: no-repeat;
+					background-position: center center;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+
+	span {
+		display: none;
+	}
+}
+
+
+#categorylist,
+#color,
+#discount,
+#price {
+	float: left;
+	width: 100%;
+	li {
+		input[type=checkbox] {
+			margin: 0;
+			float: none;
+		}
+	}
+	a {
+		@include text-decoration(none);
+		&:link, &:visited{
+			color: $filter_link_default;
+		}
+
+		&:hover{
+			color: $filter_link_hover;
+		}
+	}
+}

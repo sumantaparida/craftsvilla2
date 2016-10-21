@@ -1,0 +1,202 @@
+//--------------------------------------------------------
+// Wee need to convirt list function
+$black100: #000000;
+// $black95: lighten($black100,5%); //
+$black87: lighten($black100,13%); //
+$black54: lighten($black100,46%); //
+$black38: lighten($black100,62%); //
+$black12: lighten($black100,88%); //
+
+$white100: #FFFFFF;
+$white95: darken($white100,5%); //
+$white87: darken($white100,13%); //
+$white54: darken($white100,46%); //
+$white38: darken($white100,62%); //
+$white12: darken($white100,88%); //
+
+$beige: beige;
+$black: $black100;
+$blue: blue;
+$brown: brown;
+$gold: gold;
+$green: green;
+$grey: grey;
+$maroon: maroon;
+$multicolor: $white87;
+$orange: orange;
+$pastel: $white87;
+$pink: pink;
+$purple: purple;
+$red: red;
+$silver: silver;
+$violet: violet;
+$white: $white100;
+$yellow: yellow;
+
+$cv_red: #981937;
+$cv_pink: #ff4e63;
+$cv_green: #6da40e;
+
+$cv_pp_green_dark: #6da40e; //#84be12-rating //#b8e986-saving //#6da40e-buynow
+$cv_pp_green_light: #b8e986;; //
+$cv_pp-green_accent_dark: $black87;
+$cv_pp_green_accent_light: $white100;
+
+///////////////////////////////////////////////////////////
+
+///                    /////////////////////////////////////////
+// Base Theme Colours  /////////////////////////////////////////
+//                     /////////////////////////////////////////
+
+$cv_primary: $cv_red;
+$cv_accent_light: $white100;
+$cv_accent_dark: $black87;
+
+$cv_text_dark: $black100;
+$cv_text_dark_0: $black87;
+$cv_text_dark_1: $black54;
+$cv_text_dark_2: $black38;
+$cv_text_dark_3: $black12;
+
+$cv_text_light: $white100;
+$cv_text_light_0: $white87;
+$cv_text_light_1: $white54;
+$cv_text_light_2: $white38;
+$cv_text_light_3: $white12;
+
+$cv_bg_primary: $cv_primary;
+$cv_bg_wht_0: $white100;
+$cv_bg_wht_1: $white87;
+$cv_bg_wht_2: $white54;
+$cv_bg_wht_3: $white38;
+$cv_bg_wht_4: $white12;
+
+$cv_bg_blk_0: $black100;
+$cv_bg_blk_1: $black87;
+$cv_bg_blk_2: $black54;
+$cv_bg_blk_3: $black38;
+$cv_bg_blk_4: $black12;
+
+$cv_default_background: none;
+$cv_header_background: #f9f9f9;
+$cv_megamenu_nav_background: #eee4d1;
+$cv_megamenu_content_background: $white100;
+$cv_carousel_background: none;
+$cv_grid_background: none;
+$cv_footer_background: $white100;
+$cv_filter_background: $white100;
+$cv_modal_background: $white100;
+$cv_top_nav-text: #747474;
+
+//---------------------------------------------
+
+@import 'vars_mobile.scss';
+@import 'vars_header.scss';
+@import 'vars_megamenu.scss';
+@import 'vars_carousel.scss';
+@import 'vars_gridcontent.scss';
+@import 'vars_footer.scss';
+@import 'vars_filters.scss';
+@import 'vars_modal.scss';
+@import 'breadcrumbs_filter_var.scss';
+@import 'product_search_name_var.scss';
+@import 'product_grid_var.scss';
+@import 'vars_pdp.scss';
+// Map
+@import '../map/mapfunction.scss';
+
+///////////////////////////////////////////////////////////
+
+
+// BG Color
+$white: #ffffff !default;
+$beige: #f5f3e8 !default;
+$beige-two: #eee4d1 !default;
+$white2: #fbfbfb;	//replace with cv_text_dark_3
+$white3: #f9f9f9;	//replace with cv_text_dark_3
+$grey2: #dedede;	//replace with cv_text_dark_3
+$grey3: #ededed;
+$grey4: #949494;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$brownish-grey: #626262 !default; //replace with $cv_text_dark_1;
+$greyish-brown: #4c4c4c !default; //replace with $cv_text_dark_0;
+$rouge: #981937 !default; //replace with $cv_primary;
+$grey: #888888 !default; //replace with $cv_text_dark_1;
+// Headding
+$headding-color: #323232 !default;
+$b-bottom: #dfdfdf !default;
+
+// color use in carousel
+
+$vivid-orange: #f39c12 !default;
+$very-dark-grey: #666666 !default;
+$very-light-grey: #e0e0e0 !default;
+//color use in  modal
+$dark-grey2: #999999 !default;
+$very-dark-grey2: #4a4a4a !default;
+$very-light-grey2: #e7e7e7 !default;
+
+// breadcrumb Color
+$breadC: #727272 !default;
+
+
+
+/////////////////////////////////////////////////////////
+// CV New Theam color
+$cv-p0: #ff4e63 !default;
+$cv-p1: #222222 !default;
+$cv-p2: #424242 !default;
+$cv-p3: #626262 !default;
+$cv-p4: #a4a4a4 !default;
+$cv-p5: #f4f4f4 !default;
+$cv-p6: #448aff !default;
+$cv-p7: #f6f6f6 !default;
+$cv-p8: #9b9b9b !default;
+$cv-p9: #fbfbfb !default;
+$cv-p10: #6c6c6c !default;
+$cv-p11: #565656 !default;
+$cv-black100 : rgba(0,0,0,1);
+$cv-black87 : rgba(0,0,0,0.87);
+$cv-black54 : rgba(0,0,0,0.54);
+$cv-black38 : rgba(0,0,0,0.38);
+$cv-black12 : rgba(0,0,0,0.12);
+
+// CV New Font size
+$cv-title: 24px !default;
+//$cv-title1: 18px !default;
+$cv-header: 16px !default;
+$cv-font-normal: 14px !default;
+//$cv-caption: 14px !default;
+$cv-caption1: 12px !default;
+//$cv-button: 14px !default;
+//$cv-link: 12px !default;
+$cv-footer-heading: 15px !default;
+
+/////////////////////////////////////////////////////////
+//== Font size
+//
+//##
+$font-size-lg: 18px !default;
+$font-size-md: 16px !default;
+$font-size: 14px !default;
+$font-size-sm: 12px !default;
+$font-size-sm1: 13px !default;
+$font-size-ex: 10px !default;
+
+//== Font
+//
+//##
+$font-family-ProximaNova: 'ProximaNova', sans-serif !default;
+$font-family-roboto:  'Roboto', Helvetica, Arial, sans-serif !default;
+
+//== Header
+//
+//##
+
+
+//== MegaMenu
+//
+//##

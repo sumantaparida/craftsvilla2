@@ -1,0 +1,140 @@
+.sortByWrapper {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+  }
+  // Left
+  .sortByWrapperLeft {
+    p {
+      float: left;
+      margin: 0px;
+      > span {
+        line-height: 15px;
+        margin: 0px 10px;
+        padding: 12px 0px;
+        display: inline-block;
+        cursor: pointer;
+        color: $cv-black54;
+        position: relative;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        &:first-child {
+          margin: 0px;
+          color: $cv-black100;
+          cursor: default;
+          &::after {
+            display: none;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: -10px;
+          top: -3px;
+          bottom: 0;
+          margin: auto;
+          height: 10px;
+          width: 1px;
+          background-color: $cv-black12;
+        }
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        > span {
+          span {
+            position: relative;
+            &:first-child {
+              margin-right: 10px;
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                right: -10px;
+                top: -3px;
+                bottom: 0;
+                margin: auto;
+                height: 10px;
+                width: 1px;
+                background-color: $cv-black12;
+              }
+            }
+            &:last-child {
+              margin-left: 10px;
+            }
+            //
+            &.effect {
+              &::before {
+                bottom: -12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Right
+  .sortByWrapperRight {
+    p {
+      margin: 0px 0px 0px 0px;
+      float: right;
+      span {
+        float: left;
+        line-height: 15px;
+        margin-left: 5px;
+        padding: 6px 0px;
+      }
+      .gridViewChange {
+        color: $cv-p11;
+        i {
+          &[class*=cv-grid-] {
+            width: 20px;
+            height: 20px;
+            float: right;
+            margin: -3px 0px 0px 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+// Effect Start
+.effect {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  }
+  &.active {
+    color: $cv-p6;
+    // font-weight: bold;
+    // position: relative;
+    // transition-property: color;
+    // transition-duration: 100ms;
+    // transition-delay: 10ms;
+    &::before {
+      width: 100%;
+      background-color: $cv-p6;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.pdp-spacification-wrapper {
+  margin: 30px 0px;
+  hr {
+    float: left;
+    width: 100%;
+    background-color: red;
+  }
+  ul.pdp-tabs {
+    list-style: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    border-bottom: solid 1px #eee;
+    li {
+      float: left;
+      margin-right: 20px;
+      @media screen and (max-width: breakpoint(sm)) {
+    		margin-right: 15px;
+    	}
+      a {
+        float: left;
+        font-size: $font-size-lg;
+        padding: 5px 0px;
+        color: rgba(0,0,0,0.8);
+        position: relative;
+        &.active {
+          color: $cv-p0;
+          font-weight: bold;
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 2px;
+            background-color: $cv-p0;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  // product-spacification-data
+  .pdp-spacification-data {
+    p {
+      color: $cv-p3;
+      a {
+        color: $cv-p6;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .psd-list {
+      padding: 0px;
+      li {
+        color: $cv-p3;
+        margin: 10px 0px;
+        span {
+          color: $cv-p2;
+        }
+      }
+    }
+  }
+}
+.psd-heading {
+  p {
+    font-size: $font-size-md;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+// PDP Seller Details
+.pdp-seller-details {
+  .pdp-seller-details-left {
+    p {
+      float: left;
+      width: 100%;
+      line-height: 40px;
+      margin-bottom: 0px;
+      span {
+        float: left;
+        margin-right: 5px;
+        .icon {
+          width: 17px;
+          height: 16px;
+          margin-top: 12px;
+          display: inline-block;
+          cursor: pointer;
+        }
+        &.vender-name {
+          text-transform: uppercase;
+          color: $cv-p6;
+        }
+        &.seller-img {
+          width: 40px;
+          height: 40px;
+          border: solid 1px $cv-p2;
+          background-color: #dedede;
+          border-radius: 50px;
+          overflow: hidden;
+          text-align: center;
+          margin-right: 10px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .ratting-count {
+      font-size: $font-size-sm;
+      color: rgba(0,0,0,0.5);
+    }
+  }
+  .view-store-btn {
+    text-align: center;
+    color: $cv-p0;
+    font-weight: bold;
+    border: solid 1px $cv-p0;
+    padding: 8px 15px 6px 15px;
+    border-radius: 2px;
+    margin-top: 4px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@import "product-grid.scss";

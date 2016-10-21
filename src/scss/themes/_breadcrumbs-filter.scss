@@ -1,0 +1,44 @@
+.filter-action-container{
+  @include nopadding;
+  margin: 18px 0px;
+  > ul {
+    padding: 0px;
+    list-style: none;
+    float: left;
+    margin: 0px;
+    @include width-percent;
+    > li {
+      float: left;
+      background: $breadcrom-filter-bg;
+      margin-right: 5px;
+      border: solid 1px $breadcrom-filter-border;
+      padding: 2px 5px;
+      font-size: $font-size-sm;
+      cursor: pointer;
+      color: $cv-p4;
+      border-radius: 2px;
+      span {
+        &:first-child {
+          // border: solid 1px red;
+          padding: 2px 0px 0px 0px;
+          line-height: 14px;
+        }
+        &.icon {
+          @include width-percent(13px);
+          @include height-auto(13px);
+          margin: 2px 0px 0px 5px;
+          // border: solid 1px red;
+          // background-color: #dedede;
+        }
+      }
+    }
+    .clear-all {
+      background-color: inherit;
+      // border: none;
+      color: $cv-p6;
+      background: 0 0;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}

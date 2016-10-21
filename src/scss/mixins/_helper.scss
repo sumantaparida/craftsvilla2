@@ -1,0 +1,133 @@
+// padding ----------------------------------------
+@mixin nopadding($zero:0px) {
+	padding: $zero !important;
+}
+// padding right------------------------------------
+@mixin padding-right($pr:auto) {
+	padding-right: $pr;
+}
+// padding left----------------------------------
+@mixin padding-left($pl:auto) {
+	padding-left: $pl;
+}
+
+// padding top----------------------------------------
+@mixin padding-top($pt:auto) {
+	padding-top: $pt;
+}
+
+// padding bottom------------------------------------
+@mixin padding-bottom($pb:auto) {
+	padding-bottom: $pb;
+}
+
+
+// margin---------------------------------------------
+@mixin nomargin($zero:0px) {
+	margin: $zero $zero $zero $zero;
+}
+// margin top------------------------------------------
+@mixin margin-top($mt:0px) {
+	margin-top: $mt;
+}
+
+// margin right-----------------------------------------
+@mixin margin-right($mr:0px) {
+	margin-right: $mr;
+}
+
+// margin bottom-------------------------------------
+@mixin margin-bottom($mb:0px) {
+	margin-bottom: $mb;
+}
+
+// margin left---------------------------------------
+@mixin margin-left($ml:0px) {
+	margin-left: $ml;
+}
+
+// background bg color--------------------------------
+@mixin background-bg($bgcolor: $cv_default_background) {
+	background-color: $bgcolor;
+}
+
+// position
+@mixin position($pos:relative) {
+	position: $pos;
+}
+// width
+@mixin width-percent($w:100%) {
+	width: $w;
+}
+// height
+@mixin height-auto($h:auto) {
+	height: $h;
+}
+
+// fonts
+@mixin font-face($font: $font-family-ProximaNova) {
+	font-family: $font;
+}
+// fonts Weight
+@mixin font-weight($fontweight:400) {
+	font-weight: $fontweight;
+}
+// text decoration
+@mixin text-decoration($decoration:none) {
+	text-decoration: $decoration;
+}
+// text color
+@mixin text-color($color: $greyish-brown) {
+	color: $color;
+}
+// Line height
+@mixin line-height($lheight:18px) {
+	line-height: $lheight;
+}
+// Border Top Style
+@mixin border-top($style: solid, $color: #dedede, $width: 1px) {
+	border-top-style: $style;
+	border-top-color: $color;
+	border-top-width: $width;
+}
+
+// Border right Style
+@mixin border-right($style: solid, $color: #dedede, $width: 1px) {
+	border-right-style: $style;
+	border-right-color: $color;
+	border-right-width: $width;
+}
+// Border bottom Style
+@mixin border-bottom($style: solid, $color: #dedede, $width: 1px) {
+	border-bottom-style: $style;
+	border-bottom-color: $color;
+	border-bottom-width: $width;
+}
+// Border left Style
+@mixin border-left($style: solid, $color: #dedede, $width: 1px) {
+	border-left-style: $style;
+	border-left-color: $color;
+	border-left-width: $width;
+}
+
+// Display
+@mixin display($dis: block) {
+	display: $dis;
+}
+// radius
+@mixin border-top-radius($radius) {
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-top-right-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+	border-bottom-left-radius: $radius;
+	border-top-left-radius: $radius;
+}

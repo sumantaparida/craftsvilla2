@@ -1,0 +1,456 @@
+// sprite img
+%sprite-image {
+    background-repeat: no-repeat;
+		//background-image: url('http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cv-sprite.1470395060.png');
+		background-image: url('./assets/img/cv-sprite.png');
+		background-size: auto;
+}
+.icon {
+  @extend %sprite-image;
+}
+// Cv update icon start
+.first_arrow {
+	background-position: -135px -17px;
+}
+.cv-search {
+	background-position: -291px -72px;
+}
+.cv-login {
+	background-position: -39px -9px;
+}
+.cv-login-dark {
+	background-position: -63px -43px;
+}
+.cv-cart {
+	background-position: -8px -8px;
+}
+.cv-cart-dark {
+	background-position: -7px -42px;
+}
+.cv-wishlist-icon {
+	background-position: -36px -41px;
+}
+.cv-track-order {
+	background-position: -87px -42px;
+}
+.cv-location {
+	background-position: -78px -104px;
+}
+.cv-icon-change {
+  background-position: -283px -112px;
+}
+.cv-cash-avalable {
+  background-position: -296px -109px;
+}
+.cv-shipping {
+  background-position: -56px -107px;
+}
+.cv-estimated {
+  background-position: -32px -107px;
+}
+.cv-pdp-buyer {
+  background-position: -122px -102px;
+}
+.cv-size-chart {
+  background-position: -94px -109px;
+}
+.cv-customer-review {
+	background-position: -114px -41px;
+}
+.cv-customer-feedback {
+	background-position: -140px -41px;
+}
+.cv-faq {
+	background-position: -169px -42px;
+}
+.cv-app {
+	background-position: -195px -41px;
+}
+.cv-zoom {
+  background-position: -11px -107px;
+  width: 15px;
+  height: 15px;
+}
+.cv-star-active {
+  background-position: -262px -107px;
+}
+.cv-star-deactive {
+  background-position: -148px -106px;
+}
+.cv-grid-big {
+  background-position: -227px -43px;
+}
+.cv-grid-small {
+  background-position: -256px -43px;
+}
+.filter-close-mobile {
+  background-position: -286px -46px;
+}
+// Cv update icon end
+
+
+
+
+//wishlist
+.cv-wishlist {
+	width: 25px !important;
+	background-position: -53px -192px;
+}
+
+.cv-wishlist-big {
+	background-position: -76px -9px;
+}
+//CV CART
+//CV LOGIN
+
+.cv-drop-arrow {
+	background-position: -51px -169px;
+}
+//wishlist
+
+// buyer protection
+.cv-buyer{
+	background-position: -161px -44px;
+}
+// buyer protection
+.cv-delete-small{
+	background-position: -295px -14px;
+}
+// Call icon-fb-round
+.icon-call {
+	background-position: -25px -12px;
+}
+// App
+.icon-download {
+	background-position: -6px -12px;
+}
+//
+.icon-close {
+	background-position: -281px -90px;
+}
+
+
+
+//-----------------------------------------
+//SOCIAL ICONS ROUND LOGO
+//-----------------------------------------
+
+.icon-fb-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -9px -182px;
+  border-radius: 50%;
+}
+
+.icon-tw-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -51px -182px;
+  border-radius: 50%;
+}
+
+.icon-gp-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -94px -181px;
+  border-radius: 50%;
+}
+
+.icon-pin-round{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-position: -137px -182px;
+  border-radius: 50%;
+}
+
+//-----------------------------------------
+//SOCIAL ICONS LOGO GREY
+//-----------------------------------------
+
+.icon-fb-logo-grey{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -8px -82px;
+}
+
+.icon-tw-logo-grey{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -47px -82px;
+}
+
+.icon-pin-logo-grey{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -85px -82px;
+}
+
+.icon-wa-logo-grey{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -260px -124px;
+}
+
+//-----------------------------------------
+//SOCIAL ICONS LOGO COLOR
+//-----------------------------------------
+
+.icon-fb-logo-color{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -123px -82px;
+}
+
+.icon-tw-logo-color{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -162px -82px;
+}
+
+.icon-pin-logo-color{
+	display: inline-block;
+	width: 34px;
+	height: 35px;
+	background-position: -200px -82px;
+}
+
+//-----------------------------------------
+//ONLINE PAYMENT PARTNERS
+//-----------------------------------------
+
+.icon-visacard{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -112px -135px;
+}
+
+.icon-mastercard{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -167px -135px;
+}
+
+.icon-maestrocard{
+	display: inline-block;
+	width: 51px;
+	height: 32px;
+	background-position: -223px -135px;
+}
+
+//=============================
+//Google Play
+//=============================
+
+.icon-googleplay{
+	display: inline-block;
+	width: 93px;
+	height: 28px;
+	background-position: -9px -135px;
+}
+
+//=============================
+//FILTER ICONS
+//=============================
+.icon-arrow {
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	background-position: -209px -15px;
+}
+.checked {
+  background-position: -113px -13px;
+}
+// .icon-arrow-down{
+// 	display: inline-block;
+// 	width: 13px;
+// 	height: 8px;
+// 	background-position: -51px -169px;
+// }
+//
+// .icon-arrow-up{
+// 	display: inline-block;
+// 	width: 13px;
+// 	height: 8px;
+// 	background-position: -68px -169px;
+// }
+//
+// .icon-arrow-left{
+// 	display: inline-block;
+// 	width: 13px;
+// 	height: 22px;
+// 	background-position: -262px -88px;
+// }
+//
+// .icon-arrow-right{
+// 	display: inline-block;
+// 	width: 13px;
+// 	height: 22px;
+// 	background-position: -243px -88px;
+// }
+//
+// .icon-delete-large{
+// 	display: inline-block;
+// 	width: 15px;
+// 	height: 15px;
+// 	background-position: -283px -92px;
+// }
+//
+// .icon-delete-small{
+// 	display: inline-block;
+// 	width: 11px;
+// 	height: 11px;
+// 	background-position: -86px -168px;
+// }
+//
+// .icon-tick-white{
+// 	display: inline-block;
+// 	width: 11px;
+// 	height: 11px;
+// 	background-position: -35px -168px;
+// }
+//
+// .icon-tick-green{
+// 	display: inline-block;
+// 	width: 17px;
+// 	height: 12px;
+// 	background-position: -201px -168px;
+// }
+//
+// .icon-tick-white-small{
+// 	display: inline-block;
+// 	width: 8px;
+// 	height: 8px;
+// 	background-position: -9px -170px;
+// }
+//
+// .icon-tick-primary-small{
+// 	display: inline-block;
+// 	width: 8px;
+// 	height: 8px;
+// 	background-position: -23px -170px;
+// }
+
+//--------------------------------------------
+
+.icon-arrow-up-active{
+	background-position: -103px -168px;
+}
+
+.icon-arrow-down-active{
+	background-position: -112px -168px;
+}
+
+.icon-arrow-up-grey{
+	background-position: -123px -168px;
+}
+
+.icon-arrow-down-grey{
+	background-position: -132px -168px;
+}
+
+//----------------------------------------------
+
+.icon-mobile-sort-grey{
+	background-position: -223px -51px;
+}
+
+.icon-mobile-filter-grey{
+	background-position: -252px -51px;
+}
+
+.icon-mobile-sort{
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	@extend .icon-mobile-sort-grey;
+}
+
+.icon-mobile-filter{
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	@extend .icon-mobile-filter-grey;
+}
+
+//==========================================
+// CURRENCY ICONS
+//==========================================
+
+.icon-INR-big, .icon-rupee, .icon-rupee-big{
+	display: inline-block;
+	width: 16px;
+	height: 21px;
+	background-position: -74px -48px;
+}
+
+.icon-INR-small, .icon-rupee-small{
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background-position: -9px -54px;
+}
+
+//---------------------------------------
+
+
+.icon-USD-big, .icon-usd, .icon-usd-big{
+	display: inline-block;
+	width: 16px;
+	height: 21px;
+	background-position: -74px -48px;
+}
+
+.icon-USD-small, .icon-usd-small{
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background-position: -9px -54px;
+}
+
+//---------------------------------------
+
+
+.icon-EURO-big, .icon-euro, .icon-euro-big{
+	display: inline-block;
+	width: 16px;
+	height: 21px;
+	background-position: -74px -48px;
+}
+
+.icon-EURO-small, .icon-euro-small{
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background-position: -9px -54px;
+}
+
+//---------------------------------------
+
+
+.icon-GBP-big, .icon-gbp, .icon-gbp-big{
+	display: inline-block;
+	width: 16px;
+	height: 21px;
+	background-position: -74px -48px;
+}
+
+.icon-GBP-small, .icon-gbp-small{
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background-position: -9px -54px;
+}
+
+//---------------------------------------
