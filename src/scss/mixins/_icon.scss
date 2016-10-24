@@ -2,7 +2,7 @@
 %sprite-image {
     background-repeat: no-repeat;
 		//background-image: url('http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cv-sprite.1470395060.png');
-		background-image: url('./assets/img/cv-sprite.png');
+		background-image: url('../img/cv-sprite.png');
 		background-size: auto;
 }
 .icon {
@@ -85,6 +85,12 @@
 }
 .filter-close-mobile {
   background-position: -286px -46px;
+}
+.cv-prev {
+  background-position: -253px -12px
+}
+.cv-next {
+  background-position: -269px -11px;
 }
 // Cv update icon end
 

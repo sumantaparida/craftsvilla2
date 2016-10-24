@@ -1,0 +1,198 @@
+#search_mini_form {
+	padding: 20px 0px;
+	@media screen and (max-width: breakpoint(sm)) {
+		padding: 15px 0px;
+	}
+	@include height-auto();
+	.search-container {
+		@include height-auto(36px);
+		@include display;
+		@include position;
+		#searchval {
+			border: solid rgba(250,250,250,0) 1px;
+			@include height-auto(36px);
+			border-top-left-radius: 2px;
+			border-top-right-radius: 0px;
+			border-bottom-left-radius: 2px;
+			border-bottom-right-radius: 0px;
+			box-shadow: none;
+			transition: none;
+			padding: 6px 12px;
+			&:focus, &:visited, &:active  {
+				@include height-auto(36px);
+				border: solid rgba(250,250,250,0) 1px;
+				box-shadow: none;
+				outline: 0px;
+				border: 0px;
+				padding: 6px 12px;
+				transition: none;
+				outline-offset: 0px;
+			}
+		}
+	}
+	.search-button {
+		@include background-bg($mm_search_btn_bg);
+		@include text-color($header_search_btn_text);
+		@include font-weight(700);
+		letter-spacing: 1.5px;
+		border: solid 2px $mm_search_btn_bg;
+		border-top-left-radius: 0;
+		border-top-right-radius: 2px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 2px;
+		@include height-auto(36px);
+		@include width-percent(40px);
+		@include nopadding(0px);
+		@include position;
+		.icon {
+			@include height-auto(24px);
+			@include width-percent(30px);
+			margin: auto;
+			@include position(absolute);
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+		&:focus, &:visited, &:active  {
+			box-shadow: none;
+			outline: none;
+			border: none;
+		}
+	}
+}
+//
+[role="search-list"] {
+	@include background-bg($header_search_list_bg);
+	@include display(none);
+	@include position(absolute);
+	@include width-percent;
+	@include border-bottom-radius(5px);
+	border: solid 1px $cv_text_dark_3;
+	max-height: 200px;
+	padding: 0px;
+	list-style: none;
+	top: 35px;
+	overflow-x: auto;
+	li {
+		a {
+			@include text-decoration;
+			@include width-percent;
+			border-bottom: solid 1px $cv_text_dark_3;
+			padding: 10px;
+			color: $greyish-brown;
+			font-size: $font-size-sm;
+			float: left;
+			[search-data], [search-img] {
+				float: left;
+				display: block;
+			}
+			[search-category] {
+				float: right;
+				text-transform: uppercase;
+			}
+			[search-img] {
+				width: 40px;
+				height: 40px;
+				background-color: $cv_text_dark_3;
+				margin-right: 5px;
+				border: solid 1px $cv_text_dark_2;
+				text-align: center;
+			}
+		}
+		:hover {
+			@include background-bg($cv_text_dark_3);
+			@include text-decoration;
+		}
+	}
+}
+//
+//
+.tt-dropdown-menu, .twitter-typeahead {
+	@include width-percent;
+}
+.tt-dropdown-menu {
+	background-color: $cv_bg_wht_0;
+	@include position(absolute);
+	top: 36px;
+	left: 0px;
+	border-right: 1px solid rgba(0,0,0,.1);
+	border-left: 1px solid rgba(0,0,0,.1);
+	@media screen and (max-width: breakpoint(sm)) {
+		top: 44px;
+	}
+	.tt-suggestion {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		line-height: 35px;
+		.custom_results {
+			overflow: hidden;
+	    white-space: nowrap!important;
+	    text-overflow: ellipsis;
+	    margin-bottom: -1px;
+	    padding: 0 15px;
+	    @include text-decoration;
+			.result_text {
+				font-size: 12px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    color: #909090;
+		    float: left;
+		    display: inline-block;
+		    @include width-percent(70%);
+			}
+			.result_type {
+				float: right;
+		    text-transform: uppercase;
+		    color: #A6A6A6;
+		    font-size: 11px;
+				@include width-percent(25%);
+				@media screen and (max-width: breakpoint(sm)) {
+					font-size: 11px
+				}
+			}
+		}
+		.custom_results_image {
+			border-top: 1px solid rgba(0,0,0,.1);
+	    box-sizing: border-box;
+	    height: 98px;
+	    padding: 15px 0 0 15px;
+	    position: relative;
+	    white-space: normal;
+	    width: auto;
+			@media screen and (max-width: breakpoint(sm)) {
+				height:auto!important;
+        margin-bottom: 0!important;
+        padding: 0 0 0 15px!important
+			}
+			.result_text {
+				padding-left: 10px;
+		    line-height: 21px;
+				@media screen and (max-width: breakpoint(sm)) {
+					padding-left: 0;
+	        line-height: 42px
+				}
+				.discount_price {
+					color: #5B5B5B;
+			    font-weight: 700
+				}
+			}
+			.result_image {
+				background-color: #E6E6E6;
+		    background-position: center;
+		    background-size: cover;
+		    display: inline-block;
+		    height: 65px;
+		    width: 80px;
+		    float: left
+			}
+		}
+		&.tt-cursor {
+			color: #BAB9B6;
+	    background-color: #f7f7f7;
+	    cursor: pointer;
+			a {
+				color: #BAB9B6;
+			}
+		}
+	}
+}

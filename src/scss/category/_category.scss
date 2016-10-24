@@ -1,0 +1,42 @@
+// Filter start
+@import "../themes/filters.scss";
+@import "../themes/filter-mobile.scss";
+// Filter end
+// Sort by start
+@import "../themes/sortByWrapper.scss";
+// Sort by end
+// Seleted filter start
+@import "../themes/breadcrumbs-filter.scss";
+// Seleted filter end
+// Product Grid start
+@import "../themes/product-grid.scss";
+// Product Grid end
+// Pagination Start
+@import "../themes/pagination.scss";
+// Pagination End
+// Content Wrapper Start
+[data-content-wrapper] {
+  padding: 0px;
+  @media screen and (min-width: breakpoint(sm)){
+    padding:0px 0px 0px 15px;
+  }
+  .article {
+    padding: 0px;
+    @media screen and (min-width: breakpoint(sm)){
+      padding:0px 0px 0px 15px;
+    }
+  }
+}
+//
+.product-search-name-count {
+  margin-bottom: 3px;
+  .product-name {
+    font-weight: bold;
+    font-size: $font-size-md;
+    line-height: 26px;
+  }
+  .product-count {
+    font-size: $font-size-sm;
+    color: $cv-p11;
+  }
+}

@@ -1,0 +1,116 @@
+.right-sticky-container {
+  background: $cv-p9;
+  position: fixed;
+  right: 0;
+  top: 0;
+  @include height-auto(100%);
+  @include width-percent(38px);
+  z-index: 99;
+  .sticky-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @include height-auto(316px);
+    @include width-percent();
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      float: left;
+      width: 100%;
+      li {
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        a {
+          display: block;
+          text-align: center;
+          padding: 5px 0px;
+          position: relative;
+          @include height-auto(34px);
+          background-color: $cv-p9;
+          .icon {
+            @include height-auto(23px);
+            @include width-percent(23px);
+            display: block;
+            margin: auto;
+            z-index: 1;
+          }
+          [tolltip] {
+            position: absolute;
+            background-color: $cv-p0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            border: solid 1px $cv-p0;
+            height: 30px;
+            width: auto;
+            min-width: 70px;
+            white-space: nowrap;
+            margin: auto;
+            padding: 0px 8px;
+            color: $white100;
+            font-size: $cv-font-normal;
+            border-radius: 2px;
+            line-height: 28px;
+            transition: transform 500ms ease 0s;
+            -webkit-transform: translate3d(100%, 0px, 0px);
+        		-moz-transform: translate3d(100%, 0px, 0px);
+        		-o-transform: translate3d(100%, 0px, 0px);
+        		-ms-transform: translate3d(100%, 0px, 0px);
+        		transform: translate3d(100%, 0px, 0px);
+            z-index: -1;
+            &::before {
+              content: '';
+              position: absolute;
+              right: -8px;
+              top: 0;
+              bottom: 0;
+              width: 8px;
+              height: 10px;
+              margin: auto;
+              border-top: 8px solid transparent;
+              border-bottom: 8px solid transparent;
+              border-left:8px solid $cv-p0;
+            }
+          }
+          &:hover {
+            [tolltip] {
+              transition: transform 500ms ease 0s;
+              -webkit-transform: translate3d(-110%, 0px, 0px);
+          		-moz-transform: translate3d(-110%, 0px, 0px);
+          		-o-transform: translate3d(-110%, 0px, 0px);
+          		-ms-transform: translate3d(-110%, 0px, 0px);
+          		transform: translate3d(-110%, 0px, 0px);
+            }
+            .cv-cart-dark {
+              background-position: -7px -74px;
+            }
+            .cv-wishlist-icon {
+              background-position: -36px -73px;
+            }
+            .cv-login-dark {
+              background-position: -63px -75px;
+            }
+            .cv-track-order {
+              background-position: -87px -74px;
+            }
+            .cv-customer-review {
+              background-position: -114px -73px;
+            }
+            .cv-customer-feedback {
+              background-position: -140px -73px;
+            }
+            .cv-faq {
+              background-position: -169px -74px;
+            }
+            .cv-app {
+              background-position: -195px -73px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

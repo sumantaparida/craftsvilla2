@@ -1,0 +1,19 @@
+@import "bootstrap/_bootstrap.scss";
+@import "include.scss";
+.nopadding {
+	@include nopadding;
+}
+.nomargin {
+	@include nomargin;
+}
+.divider { float: left; width: 100%; }
+
+//
+@import "header/header";
+
+// Category Page
+@import "category/category";
+// Pdp Page
+@import "pdp/pdp";
+
+@import "footer/footer";

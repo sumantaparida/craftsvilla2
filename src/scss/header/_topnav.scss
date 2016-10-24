@@ -1,0 +1,109 @@
+.craftsvilla-international {
+	@include background-bg($white3);
+	color: $header_text_default;
+	@include height-auto($h:35px);
+	@include font-weight;
+	@include line-height($lheight:23px);
+	//border-bottom: solid 1px #dedede;
+	// a {
+	// 	color:$header_link_default;
+	// 	position: relative;
+	// 	border-right: solid 1px red;
+	// 	display: inline-block;
+	// 	&:hover{
+	// 		color:$header_link_hover;
+	// 		@include text-decoration(none);
+	// 	}
+	// }
+	ul[top-nav-data] {
+		list-style: none;
+		padding: 0px;
+		float: right;
+		margin: 0px;
+		li {
+			float: left;
+			border-left: solid 1px #d8d8d8;
+			position: relative;
+			&:first-child {
+				border-left: none;
+				i {
+					width: 8px;
+					height: 15px;
+					margin: 9px 5px 0px 0px;
+					float: left;
+				}
+			}
+			&:last-child {
+				i {
+					&:first-child {
+						width: 20px;
+						height: 20px;
+						margin: 7px 5px 0px 0px;
+						float: left;
+					}
+					&:last-child {
+						width: 13px;
+						height: 8px;
+						margin: 14px -10px 0px 5px;
+						float: right;
+					}
+				}
+			}
+			a {
+				line-height: 34px;
+				padding: 0px 11px;
+				float: left;
+				color: $cv_top_nav-text;
+				@include font-weight(500);
+				box-sizing: border-box;
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+				i {
+					display: inline-block;
+					font-style: normal;
+				}
+			}
+			//
+			.dropdown-menu {
+				right: 0;
+				left: inherit;
+				border-radius: 0px;
+				li {
+					width: 100%;
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	//
+	.clrrouge {
+		color:$header_link_hover;
+	}
+	.left-section-international {
+		span {
+			line-height: 33px;
+			b {
+				color: $black100;
+			}
+		}
+	}
+}
+.icon-call {
+	margin-top: 8px;
+	margin-right: 3px;
+}
+.icon-download {
+	position: absolute;
+	left: -15px;
+	top: 1px;
+}
+.icon-call, .icon-download {
+	@include width-percent($w: 16px);
+	@include height-auto($h: 17px);
+	@include display($dis: inline-flex);
+	@include display($dis: -webkit-inline-flex);
+	border: none;
+}

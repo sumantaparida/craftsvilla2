@@ -1,0 +1,192 @@
+// Login model
+.craftsvilla-navbar {
+	@include background-bg($header_background_default);
+	@media screen and (max-width: breakpoint(sm)) {
+		height: 105px;
+	}
+	.mobile-menu {
+		float: left;
+		width: 30px;
+		padding: 20px 0px;
+		span {
+			float: left;
+			height: 3px;
+			@include background-bg(#fff);
+			@include width-percent(75%);
+			margin-bottom: 5px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+.logo-container {
+	@include height-auto($h:auto !important);
+	padding: 20px 0px 20px 0px !important;
+	float: left;
+	@include line-height(20px);
+	@media screen and (max-width: breakpoint(sm)) {
+		@include nopadding(15px 0px);
+	}
+	svg {
+		@media screen and (max-width: breakpoint(sm)) {
+			width: 135px;
+		}
+	}
+}
+// Search bar
+@import '_searchbar.scss';
+@import '_mobile-search.scss';
+// Search bar End
+
+.currency-container, .authentication-container {
+	@include nopadding(20px 0px 20px 0px);
+	@media screen and (max-width: breakpoint(sm)) {
+		@include nopadding(15px 0px);
+	}
+}
+.currency-container {
+	.dropdown {
+		span {
+			@include text-color($header_currency_text_default);
+			font-size: 16px;
+		}
+		.caret {
+			margin-left: 2px;
+		}
+	}
+	.dropdown-toggle {
+		@include background-bg(transparent !important);
+		border: none;
+	}
+	.btn:active, .btn-default:active:focus, .btn-default:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle {
+		box-shadow: none;
+		@include background-bg(transparent);
+		border: none;
+		outline: none;
+	}
+	.dropdown-menu {
+		min-width: auto;
+		left: auto;
+		right: 22px;
+		border-radius: 0px;
+	}
+
+}
+.authentication-container {
+	> ul {
+		list-style: none;
+		margin: 1px 0px 0px 0px;
+		@include nopadding;
+		float: right;
+		> li {
+				@include display(inline-block);
+				float: left;
+				//margin-left: 20px;
+				@media screen and (max-width: breakpoint(sm)) {
+					margin-left: 5px;
+				}
+				@media only screen and (min-width: breakpoint(sm)) and (max-width: breakpoint(mdm)) {
+					margin-left: 10px;
+				}
+			> a {
+				@include text-color($mm_text_default);
+				font-size: 14px;
+				float: left;
+				padding: 4.5px 0px;
+				.icon {
+					float: left;
+					-webkit-transition: all .5s ease-in-out;
+					-moz-transition: all .5s ease-in-out;
+					-o-transition: all .5s ease-in-out;
+					transition: all .5s ease-in-out;
+					&.cv-login {
+						@include width-percent(22px);
+						@include height-auto(22px);
+					}
+					&.first_arrow {
+						@include width-percent(9px);
+            @include height-auto(6px);
+						margin-top: 10px;
+					}
+				}
+				> span {
+					margin: 0px 5px;
+					@include position;
+					float: left;
+					line-height: 26px;
+				}
+				.caret {
+					 margin-left: 0px;
+				}
+				span.circle {
+					padding: 0px;
+					border-radius: 50%;
+					@include width-percent(17px);
+					@include height-auto(17px);
+					float: right;
+					@include line-height(18px);
+					text-align: center;
+					background-color: $header_authentication_bg;
+					color: $header_authentication_text;
+					font-size: 10px;
+					margin-top: -5px;
+					font-style: normal;
+					margin-right: -6px;
+					font-stretch: normal;
+					@media screen and (max-width: breakpoint(sm)) {
+						@include position(absolute);
+						top: 8px;
+						right: 0px;
+					}
+				}
+
+				&:hover, &:focus {
+					@include text-decoration(none);
+				}
+			}
+			[data-cart] {
+				//border: solid 1px $header_cart_border;
+				padding-left: 4.5px;
+				padding-right: 0;
+				border-radius: 3px;
+				margin-right: 14px;
+				@include position;
+				@media screen and (max-width: breakpoint(sm)) {
+					border: none;
+				}
+				.cv-cart {
+					@include width-percent(23px);
+					@include height-auto(23px);
+				}
+			}
+			&.open {
+				.first_arrow {
+					transform: rotate(180deg);
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					-o-transform: rotate(180deg);
+				}
+			}
+		}
+	}
+	.dropdown-menu {
+		right: 0px;
+		left: inherit;
+		> li {
+			> a {
+				@include font-weight(700);
+				display: block;
+				padding: 6px 20px;
+			}
+			a:hover {
+				background-color: inherit;
+				color: $header_cart_text;
+			}
+		}
+		> .divider {
+			margin: 1px 0px;
+		}
+	}
+}

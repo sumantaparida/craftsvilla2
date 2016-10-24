@@ -1,0 +1,359 @@
+[mob-menu-overlay] {
+  @include position(fixed);
+  @include width-percent;
+  @include height-auto(100%);
+  top: 0;
+  left: 0;
+  z-index: 1400;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  @include display(none);
+}
+.animate-menu {
+  #mega-menu {
+    -webkit-transform: translate3d(0%, 0px, 0px);
+		-moz-transform: translate3d(0%, 0px, 0px);
+		-o-transform: translate3d(0%, 0px, 0px);
+		-ms-transform: translate3d(0%, 0px, 0px);
+		transform: translate3d(0%, 0px, 0px);
+  }
+}
+#mega-menu {
+  @include background-bg($mm_background_default);
+  transition: transform 500ms ease 0s;
+  @media screen and (max-width: breakpoint(sm)) {
+    //@include background-bg($mm_background_default);
+    @include width-percent(80%);
+    @include height-auto(100%);
+    @include position(fixed);
+    z-index: 1500;
+    top: 0px;
+    padding: 0px;
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+		-moz-transform: translate3d(-100%, 0px, 0px);
+		-o-transform: translate3d(-100%, 0px, 0px);
+		-ms-transform: translate3d(-100%, 0px, 0px);
+		transform: translate3d(-100%, 0px, 0px);
+    > div {
+      @include background-bg($mm_background_content_default);
+      @include width-percent(100%);
+      @include height-auto(100%);
+      padding: 0px;
+      overflow-x: auto;
+      float: left;
+      transform: translateZ(0);
+    }
+  }
+  ul[data-mega-menu] {
+    @include nomargin;
+    padding: 0px;
+    list-style: none;
+    > li {
+      @include display(inline-block);
+      @include width-percent(auto);
+      float: left;
+      text-align: left;
+      padding: 0px 15px;
+      @media screen and (max-width: breakpoint(sm)) {
+        @include width-percent;
+        float: left;
+        text-align: left;
+        padding: inherit !important;
+        margin-bottom: 1px;
+      }
+      @media only screen and (min-width: breakpoint(sm)) and (max-width: breakpoint(mdm)) {
+        padding: 0px 16px;
+      }
+      & > a {
+        padding: 0px 0px 9px 0px;
+        @include display(inline-block);
+        font-size: $cv-font-normal;
+        @include font-weight(normal);
+        color: $mm_link_default;
+        text-align: center;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        @media screen and (max-width: breakpoint(sm)) {
+          @include background-bg(cv_text_dark_3);
+          @include display;
+          color: $mm_link_default;
+          padding: 10px 15px 8px;
+          text-align: left;
+        }
+        & > span {
+          float: right;
+          &.first_arrow {
+            @include width-percent(9px);
+            @include height-auto(6px);
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            margin: 6px 0px 0px 8px;
+          }
+        }
+        &:hover {
+          @include text-decoration;
+        }
+      }
+      @media screen and (max-width: breakpoint(sm)) {
+        div[data-sub-menu] {
+          @include position;
+          @include height-auto;
+          z-index: 1;
+          box-shadow: none;
+          top: inherit;
+          transition: inherit;
+          .sub-menu-wrapper {
+            @include width-percent;
+            padding: 0px;
+            > ul{
+              padding: 0px;
+              > li  {
+                @include width-percent;
+                padding: 0px;
+                height: inherit;
+                > a {
+                  @include text-decoration;
+                  padding: 8px 15px 8px 20px;
+                  cursor: pointer;
+                  > div.acc-arrow {
+                    @include width-percent(12px);
+                    @include height-auto(22px);
+                    float: right;
+                    text-align: center;
+                    @include position;
+                    > span {
+                      @include position(absolute);
+                      @include height-auto(2px);
+                      @include width-percent;
+                      @include background-bg($cv_primary);
+                      left: 0px;
+                      top: 8px;
+                    }
+                    :nth-of-type(2) {
+                      -o-transform: rotate(90deg);
+                      -moz-transform: rotate(90deg);
+                      -ms-transform: rotate(90deg);
+                      -webkit-transform: rotate(90deg);
+                      transform: rotate(90deg);
+                      -webkit-transition: all .5s ease-in-out;
+                      -moz-transition: all .5s ease-in-out;
+                      -o-transition: all .5s ease-in-out;
+                      transition: all .5s ease-in-out;
+                      background-color: green;
+                    }
+                  }
+                }
+                a.active {
+                  > div.acc-arrow {
+                    > span:nth-of-type(2) {
+                      transform: rotate(0);
+                      -webkit-transform: rotate(0);
+                      -moz-transform: rotate(0);
+                      -ms-transform: rotate(0);
+                      -o-transform: rotate(0);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.active {
+      	.first_arrow {
+      		transform: rotate(180deg) !important;
+      	}
+        > a {
+            color: #fff;
+            // @include position;
+          }
+        // >  a::before {
+        //     @include position(absolute);
+        //     border-bottom: solid 3px $cv_primary;
+        //     content: '';
+        //     width: 100%;
+        //     bottom: -3px;
+        //   }
+          div[data-sub-menu] {
+            @include display(block);
+          }
+      }
+    }
+    [role="currency"], [role="call"] {
+      a {
+        @include background-bg(inherit);
+        @include font-weight;
+      }
+    }
+    [role="call"] {
+      span {
+        float: left;
+        img {
+          margin-right: 5px;
+          margin-top: -2px;
+        }
+      }
+    }
+    li.border-top {
+      border-top: solid 1px rgba(151,151,151,.2);
+    }
+    .shop-by {
+      @include font-weight;
+      padding: 10px 15px !important;
+      color: $mm_text_default;
+      span {
+        float: right;
+        @include height-auto(19px);
+        @include width-percent(19px);
+        cursor: pointer;
+      }
+    }
+    > li:nth-of-type(2) {
+      padding: 0px 20px 0px 0px;
+    }
+    //
+    div[data-sub-menu] {
+      @include position(absolute);
+      @include background-bg($mm_background_content_default);
+      @include width-percent;
+      @include height-auto(350px);
+      @include display(none);
+      left: 0px;
+      box-shadow: 0 2px 4px 0 rgba(134, 134, 134, 0.5);
+      z-index: -1;
+      .sub-menu-wrapper {
+        padding: 0px 80px 0px 0px;
+        > ul {
+          padding: 0px;
+          > li {
+            padding: 25px 15px 15px 15px;
+            @include display(inline-block);
+            @include width-percent(16.666%);
+            float: left;
+            text-align: left;
+            @include height-auto(350px);
+            > a {
+              font-size: $font-size;
+              color: $cv-p1;
+              @include font-weight(700);
+              @include display(block);
+              @include width-percent;
+              float: left;
+              div.acc-arrow {
+                float: right;
+                @include width-percent(22px);
+                @include height-auto(22px);
+                @include position;
+                text-align: center;
+                span {
+                  @include position(absolute);
+                  @include width-percent;
+                  @include height-auto(2px);
+                  @include background-bg($cv_primary);
+                  left: 0px;
+                  top: 0px;
+                }
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            // Nested UL
+            > ul {
+              float: left;
+              @include width-percent;
+              padding: 0px;
+              list-style: none;
+              @media screen and (max-width: breakpoint(sm)) {
+                @include display(none);
+              }
+              > li {
+                margin: 8px 0px;
+                > a {
+                  font-size: 13px;
+                  color: $cv-p2;
+                  @include display;
+                  @media screen and (max-width: breakpoint(sm)) {
+                    padding: 0px 30px;
+                  }
+                  > span {
+                    //@include background-bg($cv_primary);
+                    @include position;
+                    padding: 2px 3px 1px;
+                    font-size: $font-size-sm;
+                    color: $cv-p0;
+                    border: solid 1px $cv-p0;
+                    margin-left: 3px;
+                    @include font-weight(normal);
+                    border-radius: 4px;
+                  }
+                }
+                :hover {
+                  color: $cv-p0;
+                  @include text-decoration;
+                  > span {
+                    color: $cv-p0;
+                  }
+                }
+              }
+            }
+            .image_box {
+              @include height-auto;
+              a:nth-of-type(2) {
+                img {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          > li:nth-child(even) {
+            @include background-bg($mm_background_content_default);
+          }
+
+          > li:last-child {
+            @include background-bg($mm_background_content_default);
+          }
+        }
+      }
+    }
+  }
+  // App
+  ul[data-app] {
+    @include width-percent;
+    float: left;
+    list-style: none;
+    padding: 0px;
+    > li {
+      @include width-percent(50%);
+      @include position;
+      float: left;
+      > a {
+        @include display;
+        text-align: center;
+        padding: 10px 15px 8px;
+        color: #666;
+        > span {
+           img {
+             margin-right: 5px;
+           }
+        }
+      }
+    }
+    :nth-of-type(2):after {
+      @include position(absolute);
+      @include width-percent(1px);
+      @include height-auto(15px);
+      @include background-bg($mm_background_content_default);
+      content: '';
+      left: 0px;
+      top: 12px;
+    }
+    .icon-download {
+      left: 9px;
+      top: 11px;
+    }
+  }
+}
+//

@@ -1,15 +1,16 @@
 //
-%sprite-image {
-    background-repeat: no-repeat;
-		//background-image: url('http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cv-sprite.1470395060.png');
-		background-image: url('./assets/img/cv-sprite.png');
-		background-size: auto;
-}
+// %sprite-image {
+//     background-repeat: no-repeat;
+// 		//background-image: url('http://lstatic1.craftsvilla.com/skin/frontend/default/craftsvilla2015/img/cv-sprite.1470395060.png');
+// 		background-image: url('../img/cv-sprite.png');
+// 		background-size: auto;
+// }
 //
 @import 'filters-colors.scss';
 #sidebar {
 	@include background-bg($filter_background_default);
 	padding: 0px;
+	position: relative;
 	@media screen and (max-width: breakpoint(sm)){
 		display: none;
 		position: fixed;
@@ -19,6 +20,20 @@
 		height: 100%;
 		padding: 0px;
 		z-index: 1500 !important
+	}
+	@media screen and (min-width: breakpoint(sm)){
+		&::before {
+			content: '';
+			position: absolute;
+			right: -15px;
+			top: 0;
+			bottom: 0;
+			border-bottom: 0;
+			width: 1px;
+			height: 96%;
+			background-color: #ebebeb;
+			margin: auto;
+		}
 	}
 }
 a {

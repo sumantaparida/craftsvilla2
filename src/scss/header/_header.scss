@@ -1,0 +1,16 @@
+header {
+	@include position($pos:fixed);
+	@include width-percent;
+	z-index: 1500;
+	top: 0px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.12);
+}
+
+//----------------------------------*\
+// Navigation
+//----------------------------------*/
+@import 'topnav.scss';
+@import 'mainnav.scss';
+@import 'megamenu.scss';
+// Right Sticky Start
+@import "right-sticky-container.scss";
