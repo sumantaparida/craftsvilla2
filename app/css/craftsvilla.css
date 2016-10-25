@@ -5679,7 +5679,7 @@ button.close {
     display: none !important;
   }
 }
-.icon, ul[role=filter] > li h5 > span.icon-arrow, ul[role=filter] > li h5 > label input[type="checkbox"]:checked + span, ul.sub-menu > li > label > input[type=checkbox]:checked + label, .sub-menu-color > li label input[type=checkbox]:checked + label, .tab-left-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
+.icon, ul[role=filter] > li h5 > span.icon-arrow, ul[role=filter] > li h5 > label input[type="checkbox"]:checked + span, ul.sub-menu > li > label > input[type=checkbox]:checked + label, .sub-menu-color > li label input[type=checkbox]:checked + label, .tab-right-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
   background-repeat: no-repeat;
   background-image: url("../img/cv-sprite.png");
   background-size: auto;
@@ -5784,7 +5784,7 @@ button.close {
 }
 
 .filter-close-mobile {
-  background-position: -286px -46px;
+  background-position: -283px -43px;
 }
 
 .cv-prev {
@@ -7244,6 +7244,12 @@ a:hover {
     display: block;
     text-align: center;
   }
+  .f-heading .filter-close-mobile {
+    float: right;
+    margin-top: -26px;
+    width: 23px;
+    height: 23px;
+  }
 }
 
 ul[role=filter] {
@@ -7556,8 +7562,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 .mobile-filter .tabs-left {
   list-style: none;
   overflow: auto;
-  background: #f8f8f8;
-  height: 820px;
+  border-right: solid 1px #ebebeb;
   padding: 0;
   margin: 0;
 }
@@ -7566,72 +7571,34 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   margin: 0;
   border-right: solid 1px #ebebeb;
   border-bottom: solid 1px #ebebeb;
-  background: #f8f8f8;
-}
-.mobile-filter .tabs-left > li.active {
-  background: #fff;
-  color: #212121;
 }
 .mobile-filter .tabs-left > li.active a {
-  color: #333;
-  text-decoration: none;
-}
-.mobile-filter .tabs-left > li::hover {
+  color: #ff4e63;
   text-decoration: none;
 }
 .mobile-filter .tabs-left > li a {
   display: block;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: .3px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
   line-height: 20px;
   padding: 14px 15px;
+  color: #222222;
 }
-.mobile-filter .nav-tabs {
-  float: left;
-  border-bottom: 0;
+.mobile-filter .tabs-left > li a:hover {
+  text-decoration: none;
 }
-.mobile-filter .nav-tabs li {
-  float: none;
-  margin: 0;
-}
-.mobile-filter .nav-tabs li a {
-  margin-right: 0;
-  border: 0;
-  background-color: #c0392b;
-}
-.mobile-filter .nav-tabs li a:hover {
-  background-color: #e74c3c;
-}
-.mobile-filter .nav-tabs .glyphicon {
-  color: #fff;
-}
-.mobile-filter .nav-tabs .active .glyphicon {
-  color: #333;
-}
-.mobile-filter .nav-tabs > li.active > a, .mobile-filter .nav-tabs > li.active > a:hover, .mobile-filter .nav-tabs > li.active > a:focus {
-  border: 0;
-}
-.mobile-filter .tab-content {
-  margin-left: 45px;
-}
-.mobile-filter .tab-content .tab-pane {
-  display: none;
-  background-color: #fff;
-  padding: 1.6rem;
-  overflow-y: auto;
-}
-.mobile-filter .tab-content .active {
-  display: block;
+.mobile-filter .tabs-left > li a span {
+  margin-left: 6px;
+  font-weight: normal;
+  color: #ff4e63;
 }
 
-.tab-left-content {
+.tab-right-content {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.tab-left-content .tab-pane {
+.tab-right-content .tab-pane {
   background: #fff;
   width: 100%;
   left: 0;
@@ -7639,42 +7606,42 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   display: none;
   height: 100%;
 }
-.tab-left-content .tab-pane.active {
+.tab-right-content .tab-pane.active {
   display: block;
 }
-.tab-left-content .tab-pane .search_category_mobile {
+.tab-right-content .tab-pane .search_category_mobile {
   border-radius: 2px;
   background-color: #fff;
-  box-shadow: 0 1px 0 0 rgba(239, 239, 239, 0.5);
-  border: 1px solid #e0e0e0;
+  border: 0.5px solid #fff1f3;
   padding: 5px;
-  height: 35px;
-  margin: 5px 0 8px;
+  height: 36px;
+  margin: 0px 0px 10px 0px;
   width: 100%;
+  font-size: 12px;
 }
-.tab-left-content .tab-pane ul {
+.tab-right-content .tab-pane ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
   overflow-y: auto;
 }
-.tab-left-content .tab-pane ul li {
+.tab-right-content .tab-pane ul li {
   margin-bottom: 5px;
 }
-.tab-left-content .tab-pane ul li label {
+.tab-right-content .tab-pane ul li label {
   margin-bottom: 1px;
 }
-.tab-left-content .tab-pane ul li label label {
+.tab-right-content .tab-pane ul li label label {
   width: 18px;
   height: 18px;
   border: solid 1px #cacece;
   vertical-align: middle;
 }
-.tab-left-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
+.tab-right-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
   background-position: 3px -159px;
   border: solid 1px #981937;
 }
-.tab-left-content .tab-pane ul li label span {
+.tab-right-content .tab-pane ul li label span {
   font-weight: 400;
   font-size: 12px;
   color: #727272;
@@ -7696,8 +7663,8 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 
 .apply-filter {
-  padding: 10px 15px;
-  height: 58px;
+  padding: 0px;
+  height: 50px;
   border-top: solid 1px #ebebeb;
   position: fixed;
   width: 100%;
@@ -7705,12 +7672,15 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 .apply-filter a {
   font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #981937;
+  font-weight: normal;
+  color: #565656;
+  text-align: center;
+  display: block;
+  height: 50px;
+  line-height: 50px;
 }
-.apply-filter a::hover {
-  color: #981937;
+.apply-filter a:hover {
+  text-decoration: none;
 }
 .apply-filter a.applyBtn {
   border: 1px solid #e4d2be;
@@ -7719,6 +7689,15 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   padding: 6px 20px;
   letter-spacing: 1px;
   margin-right: 10px;
+}
+.apply-filter .clear_all_section, .apply-filter .apply_button_section {
+  padding: 0px;
+}
+.apply-filter .apply_button_section {
+  background-color: #ff4e63;
+}
+.apply-filter .apply_button_section a {
+  color: #fff;
 }
 
 .sortByWrapper::before {
