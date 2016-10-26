@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         app: 'app',
         css: '<%= project.app %>/css',
         scss: ['<%= project.src %>/scss/style.scss'],
-        js: ['<%= project.app %>/js/*.js']
+        js: ['<%= project.src %>/js/scripts.js']
     },
     connect: {
         options: {

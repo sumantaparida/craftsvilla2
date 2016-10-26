@@ -7382,7 +7382,7 @@ ul.sub-menu > li > label {
 ul.sub-menu > li > label > label {
   float: left;
   border: solid 1px #ebebeb;
-  width: 15px;
+  width: 16px;
   height: 15px;
   margin-right: 10px;
   border-radius: 2px;
@@ -7581,8 +7581,9 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   font-weight: bold;
   letter-spacing: 0.3px;
   line-height: 20px;
-  padding: 14px 15px;
+  padding: 14px 11px;
   color: #222222;
+  cursor: pointer;
 }
 .mobile-filter .tabs-left > li a:hover {
   text-decoration: none;
@@ -7613,11 +7614,22 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   border-radius: 2px;
   background-color: #fff;
   border: 0.5px solid #fff1f3;
-  padding: 5px;
-  height: 36px;
+  padding: 5px 5px 5px 32px;
+  height: 35px;
   margin: 0px 0px 10px 0px;
   width: 100%;
   font-size: 12px;
+}
+.tab-right-content .tab-pane .search_category_mobile:hover, .tab-right-content .tab-pane .search_category_mobile:focus {
+  outline: none;
+}
+.tab-right-content .tab-pane .search_category_mobile + span.cv-search {
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  top: 18px;
+  left: 19px;
+  background-position: -287px -70px;
 }
 .tab-right-content .tab-pane ul {
   list-style: none;
@@ -7626,24 +7638,25 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   overflow-y: auto;
 }
 .tab-right-content .tab-pane ul li {
-  margin-bottom: 5px;
+  margin: 5px 0px;
 }
 .tab-right-content .tab-pane ul li label {
   margin-bottom: 1px;
 }
 .tab-right-content .tab-pane ul li label label {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 15px;
   border: solid 1px #cacece;
   vertical-align: middle;
+  border-radius: 2px;
 }
 .tab-right-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
-  background-position: 3px -159px;
-  border: solid 1px #981937;
+  border: solid 1px #ff4e63;
+  background-color: #ff4e63;
+  background-position: -113px -13px;
 }
 .tab-right-content .tab-pane ul li label span {
   font-weight: 400;
-  font-size: 12px;
   color: #727272;
 }
 
@@ -7698,6 +7711,41 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 .apply-filter .apply_button_section a {
   color: #fff;
+}
+
+[class*='tab-data-'].tab-data-price [class*='price_'] p span {
+  display: block;
+}
+[class*='tab-data-'].tab-data-price [class*='price_'] p span:first-child {
+  color: #747474;
+  font-size: 12px;
+}
+[class*='tab-data-'].tab-data-price [class*='price_'] p span:last-child {
+  color: #212121;
+}
+[class*='tab-data-'].tab-data-price [class*='price_'] p input[type="text"] {
+  border-radius: 2px;
+  background-color: #fff;
+  border: .5px solid #cccccc;
+  padding: 7px 5px 5px 10px;
+  height: 28px;
+  margin: 5px 0px 10px 0px;
+  width: 100%;
+}
+[class*='tab-data-'].tab-data-price [class*='price_'] p input[type="text"]:hover, [class*='tab-data-'].tab-data-price [class*='price_'] p input[type="text"]:focus {
+  outline: none;
+  border: .5px solid #fff1f3;
+}
+[class*='tab-data-'].tab-data-price .rangeSlider {
+  border: solid 1px red;
+  margin-bottom: 15px;
+}
+[class*='tab-data-'].tab-data-fabric .search_category_mobile {
+  border: none;
+  padding: 5px 5px 5px 27px;
+}
+[class*='tab-data-'].tab-data-fabric .search_category_mobile + span {
+  left: 12px !important;
 }
 
 .sortByWrapper::before {
