@@ -8,12 +8,13 @@
 }
 .divider { float: left; width: 100%; }
 
-//
+// Header
 @import "header/header";
-
 // Category Page
 @import "category/category";
 // Pdp Page
 @import "pdp/pdp";
-
+// Noresult Page
+@import "noresult/noresult";
+// Footer
 @import "footer/footer";

@@ -5800,6 +5800,14 @@ button.close {
   background-position: -269px -11px;
 }
 
+.cv-noresult {
+  background-position: -7px -277px;
+}
+
+.trending-search-icon {
+  background-position: -358px -14px;
+}
+
 .cv-wishlist {
   width: 25px !important;
   background-position: -53px -192px;
@@ -8918,6 +8926,92 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 
 .black {
   background-color: black;
+}
+
+.noresult_container {
+  text-align: center;
+  padding: 25px 0px;
+}
+@media screen and (min-width: 760px) {
+  .noresult_container {
+    padding: 110px 0px;
+  }
+}
+.noresult_container h5 .cv-noresult {
+  display: inline-block;
+  width: 89px;
+  height: 87px;
+}
+.noresult_container h5 span {
+  display: block;
+}
+.noresult_container h5 span.nofound {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+}
+.noresult_container h5 span .for {
+  color: red;
+  display: inline-block;
+  font-weight: bold;
+}
+.noresult_container p {
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 20px;
+}
+.noresult_container p.spacial_searches {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .noresult_container p.spacial_searches {
+    display: block;
+  }
+}
+.noresult_container p.spacial_searches strong {
+  color: rgba(0, 0, 0, 0.5);
+}
+.noresult_container p.spacial_searches a {
+  color: #448aff;
+}
+.noresult_container p.spacial_searches a:hover {
+  text-decoration: none;
+}
+.noresult_container .trending_searches {
+  display: block;
+  padding: 10px 10px 0px 10px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  border: solid 1px #ebebeb;
+  text-align: left;
+}
+@media screen and (min-width: 760px) {
+  .noresult_container .trending_searches {
+    display: none;
+  }
+}
+.noresult_container .trending_searches h4 {
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.noresult_container .trending_searches ul {
+  padding: 0px;
+  list-style: none;
+}
+.noresult_container .trending_searches ul li a {
+  display: block;
+  margin: 8px 0px;
+}
+.noresult_container .trending_searches ul li a span {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.87);
+}
+.noresult_container .trending_searches ul li a span.trending-search-icon {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 10px;
 }
 
 .footer-container {
