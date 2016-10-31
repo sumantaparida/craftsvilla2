@@ -5,7 +5,10 @@
 
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
-  margin: 15px 0px;
+  margin: 7.5px 0px;
+  @media (min-width: $screen-sm-max) {
+    margin: 15px 0px;
+  }
   list-style: none;
   // background-color: $breadcrumb-bg;
   // border-radius: $border-radius-base;

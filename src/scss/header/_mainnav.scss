@@ -134,6 +134,7 @@
 					font-style: normal;
 					margin-right: -6px;
 					font-stretch: normal;
+					font-weight: bold;
 					@media screen and (max-width: breakpoint(sm)) {
 						@include position(absolute);
 						top: 8px;
