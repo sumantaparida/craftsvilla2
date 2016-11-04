@@ -8,6 +8,10 @@
       float: left;
       &[class=pdp-thumb-left] {
         width: 70px;
+        display: none;
+        @media screen and (min-width: breakpoint(sm)) {
+          display: block;
+        }
         ul {
           float: left;
           width: 100%;
@@ -48,17 +52,26 @@
         }
       }
       &[class=pdp-thumb-viewer] {
-        width: 460px;
-        float: right;
+        width: 100%;
+        @media screen and (min-width: breakpoint(sm)) {
+          width: 460px;
+          float: right;
+        }
         .pdp-img-viewer {
           border: solid 1px $cv-p5;
           padding: 5px;
-          min-height: 460px;
+          margin-bottom: 10px;
+          @media screen and (min-width: breakpoint(sm)) {
+            min-height: 460px;
+          }
           background-color: rgba(222, 222, 222, 0);
           .pdp-whishlist {
             position: absolute;
-            top: 10px;
+            bottom: 10px;
             right: 10px;
+            @media screen and (min-width: breakpoint(sm)) {
+              top: 10px;
+            }
             a {
               padding: 10px;
               display: block;
@@ -89,7 +102,10 @@
           }
         }
         .pdp-zoom {
-          margin-top: 10px;
+          display: none;
+          @media screen and (min-width: breakpoint(sm)) {
+            display: block;
+          }
           p {
             color: rgba(0,0,0,0.87);
             font-size: 12px;
@@ -127,6 +143,22 @@
         color: $cv-p1;
         float: left;
         width: 100%;
+        position: relative;
+        @media screen and (max-width: breakpoint(sm)) {
+          padding-right: 25px;
+        }
+        span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: solid 1px red;
+          width: 23px;
+          height: 23px;
+          display: block;
+          @media screen and (min-width: breakpoint(sm)) {
+            display: none;
+          }
+        }
       }
       p {
         color: $cv-p3;
@@ -158,6 +190,10 @@
         float: left;
         width: 100%;
         margin: 0px;
+        display: none;
+        @media screen and (min-width: breakpoint(sm)) {
+          display: block;
+        }
         > li {
           float: left;
           width: 60%;
@@ -295,10 +331,24 @@
       .pdp-price-offer {
         float: left;
         margin: 0px;
+        width: 100%;
         span {
           float: left;
           margin-right: 8px;
           line-height: 26px;
+          a {
+            color: $cv-p6;
+            border: 1px solid $cv-p6;
+            font-size: $font-size-sm;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 2px;
+            display: block;
+            line-height: 10px;
+          }
+          &.pdp-details {
+            margin: 0px;
+          }
         }
       }
       //
