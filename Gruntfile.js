@@ -16,9 +16,14 @@ module.exports = function(grunt) {
     project: {
         src: 'src',
         app: 'app',
-        css: '<%= project.app %>/css',
+        node_modules: 'node_modules',
+        bower_components: 'bower_components',
+        css: ['<%= project.app %>/css'],
         scss: ['<%= project.src %>/scss/style.scss'],
-        js: ['<%= project.src %>/js/scripts.js']
+        js: ['<%= project.src %>/js/scripts.js'],
+        bootstrap: ['<%= project.node_modules %>/bootstrap/dist/js/bootstrap.min.js'],
+        bootstrap: ['<%= project.bower_components %>/bootstrap/dist/js/bootstrap.min.js'],
+        jquery: ['<%= project.bower_components %>/jquery/dist/jquery.min.js']
     },
     connect: {
         options: {
@@ -81,9 +86,17 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+        dev: {
+          files: {
+              '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
+              '<%= project.app %>/js/jquery.min.js': ['<%= project.jquery %>'],
+              '<%= project.app %>/js/bootstrap.min.js': ['<%= project.bootstrap %>']
+          }
+        },
         dist: {
             files: {
-                '<%= project.app %>/js/scripts.min.js': '<%= project.js %>'
+                '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
+                '<%= project.app %>/js/bootstrap.min.js': ['<%= project.js %>']
             }
         }
     },
@@ -120,7 +133,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
       'sass:dev',
       //'bower:dev',
-      //'autoprefixer:dev',
+      'uglify:dev',
       'cssmin:dev',
       'concat:dev',
       'connect:livereload',

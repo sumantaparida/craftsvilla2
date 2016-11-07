@@ -1,6 +1,6 @@
 {
   "name": "craftsvilla2",
-  "description": "craftsvilla version 2",
+  "description": "Craftsvilla Version 2",
   "main": "index.html",
   "authors": [
     "Sumanta Parida"
@@ -14,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
 }
