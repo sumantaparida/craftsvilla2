@@ -1,0 +1,56 @@
+.headding {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  span {
+    color: $cv-p0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    > span {
+      font-size: 12px;
+      color: $cv-black54;
+      display: block;
+      line-height: 0px;
+    }
+  }
+}
+.view-all {
+  float: right;
+  color: $white100;
+  background-color: $cv-p0;
+  padding: 5px 15px 2px 15px;
+  border-radius: 2px;
+  font-size: 12px;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $white100;
+  }
+}
+.widgets-wrapper {
+  margin-bottom: 30px;
+  @media screen and (max-width: breakpoint(sm)) {
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+}
+.widgets-section {
+  background-color: $white100;
+  padding: 15px;
+  border-radius: 2px;
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    @media screen and (max-width: breakpoint(sm)) {
+      margin-left: -7.5px;
+      margin-right: -7.5px;
+    }
+    .widgets-box {
+      padding: 0px 10px;
+      @media screen and (max-width: breakpoint(sm)) {
+        padding: 0px 7.5px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

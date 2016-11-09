@@ -35,16 +35,16 @@
 			margin: auto;
 		}
 	}
-}
-a {
-	@include text-decoration(none);
-	&:link,
-	&:visited {
-		@include text-color($filter_link_default);
-	}
-	&:hover {
-		@include text-color($filter_link_hover);
-	}
+	a {
+		@include text-decoration(none);
+		&:link,
+		&:visited {
+			@include text-color($filter_link_default);
+		}
+		&:hover {
+			@include text-color($filter_link_hover);
+		}
+	}	
 }
 
 .filter-wrapper {

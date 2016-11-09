@@ -1,15 +1,102 @@
 .loggedin_widgets {
   margin-bottom: 30px;
+  @media screen and (max-width: breakpoint(sm)) {
+    margin-bottom: 15px;
+  }
   .order-status-container {
     border: solid 1px rgba(0,0,0,0.14);
     background: $white;
     padding: 15px;
     border-radius: 2px;
+    max-height: 70px;
     .order-status-left {
       text-align: right;
+      color: $cv-black87;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2px;
+        height: 100%;
+        background-color: $cv-liner;
+        @extend %sprite-image;
+        @media screen and (max-width: breakpoint(sm)) {
+          background-color: transparent;
+          width: 10px;
+          height: 10px;
+          background-position: -265px -14px;
+        }
+      }
+      @media screen and (max-width: breakpoint(sm)) {
+        padding: 0px;
+        text-align: left;
+      }
+      span {
+        //float: right;
+        display: inline-block;
+        @media screen and (max-width: breakpoint(sm)) {
+    			float: left;
+          width: 70%;
+    		}
+      }
+      .acces-your-orders {
+        width: 33px;
+        height: 33px;
+        margin-right: 15px;
+        margin-top: 3px;
+      }
+      .acces-text {
+        @media screen and (min-width: breakpoint(sm)) {
+          margin-top: 10px;
+    			float: right;
+    		}
+      }
+      a {
+        font-size: 12px;
+        line-height: 41px;
+        @media screen and (max-width: breakpoint(sm)) {
+          line-height: normal;
+    		}
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
     }
     .order-status-right {
-
+      [class*=box-] {
+        position: relative;
+        padding-left: 45px;
+        line-height: 41px;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          @extend %sprite-image;
+        }
+        &.cv-buyer {
+          &::before {
+            background-position: -156px -356px;
+          }
+        }
+        &.cv-payment {
+          &::before {
+            background-position: -194px -355px;
+          }
+        }
+        &.cv-returns {
+          &::before {
+            background-position: -235px -356px;
+          }
+        }
+      }
     }
   }
 }
