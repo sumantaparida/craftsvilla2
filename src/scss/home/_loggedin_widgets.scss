@@ -70,13 +70,16 @@
         position: relative;
         padding-left: 45px;
         line-height: 41px;
+        white-space: nowrap;
+        display: block;
+        float: left;
         &::before {
           content: '';
           position: absolute;
           width: 35px;
-          height: 35px;
-          left: 0;
-          top: 0;
+          height: 32px;
+          left: 0px;
+          top: 0px;
           bottom: 0;
           margin: auto;
           @extend %sprite-image;
@@ -95,6 +98,10 @@
           &::before {
             background-position: -235px -356px;
           }
+        }
+        strong {
+          float: left;
+          line-height: 37px;
         }
       }
     }
