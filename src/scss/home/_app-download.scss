@@ -1,0 +1,42 @@
+.widgets-app-download {
+  background-color: $white100;
+  padding: 0px;
+  [class*=app-] {
+    &.app-left {
+      img {
+        @media screen and (max-width: breakpoint(sm)) {
+          width: 100%;
+        }
+      }
+    }
+    &.app-right {
+      text-align: center;
+      padding: 35px 0px;
+      .download-now {
+        margin: 0px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: $cv-p0;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1;
+        margin-bottom: 15px;
+        @media screen and (max-width: breakpoint(sm)) {
+          font-size: 100%;
+        }
+        span {
+          display: block;
+        }
+      }
+      p {
+        margin: 0px;
+        a {
+          display: inline-block;
+          span {
+            margin: 0px 5px;
+          }
+        }
+      }
+    }
+  }
+}

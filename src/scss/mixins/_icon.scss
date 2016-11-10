@@ -103,9 +103,6 @@
 }
 // Cv update icon end
 
-
-
-
 //wishlist
 .cv-wishlist {
 	width: 25px !important;
@@ -116,8 +113,8 @@
 	background-position: -76px -9px;
 }
 //CV CART
-//CV LOGIN
 
+//CV LOGIN
 .cv-drop-arrow {
 	background-position: -51px -169px;
 }
@@ -186,58 +183,58 @@
 //SOCIAL ICONS LOGO GREY
 //-----------------------------------------
 
-.icon-fb-logo-grey{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -8px -82px;
-}
-
-.icon-tw-logo-grey{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -47px -82px;
-}
-
-.icon-pin-logo-grey{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -85px -82px;
-}
-
-.icon-wa-logo-grey{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -260px -124px;
-}
+// .icon-fb-logo-grey{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -8px -82px;
+// }
+//
+// .icon-tw-logo-grey{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -47px -82px;
+// }
+//
+// .icon-pin-logo-grey{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -85px -82px;
+// }
+//
+// .icon-wa-logo-grey{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -260px -124px;
+// }
 
 //-----------------------------------------
 //SOCIAL ICONS LOGO COLOR
 //-----------------------------------------
 
-.icon-fb-logo-color{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -123px -82px;
-}
-
-.icon-tw-logo-color{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -162px -82px;
-}
-
-.icon-pin-logo-color{
-	display: inline-block;
-	width: 34px;
-	height: 35px;
-	background-position: -200px -82px;
-}
+// .icon-fb-logo-color{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -123px -82px;
+// }
+//
+// .icon-tw-logo-color{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -162px -82px;
+// }
+//
+// .icon-pin-logo-color{
+// 	display: inline-block;
+// 	width: 34px;
+// 	height: 35px;
+// 	background-position: -200px -82px;
+// }
 
 //-----------------------------------------
 //ONLINE PAYMENT PARTNERS
@@ -256,14 +253,24 @@
 	height: 32px;
 	background-position: -167px -135px;
 }
-
 .icon-maestrocard{
 	display: inline-block;
 	width: 51px;
 	height: 32px;
 	background-position: -223px -135px;
 }
-
+//=============================
+//App Store
+//=============================
+.cv-appstore {
+  display: inline-block;
+	width: 127px;
+	height: 40px;
+	background-position: -252px -417px;
+  @media screen and (max-width: 750px) {
+    width: 75px;
+  }
+}
 //=============================
 //Google Play
 //=============================
@@ -273,6 +280,15 @@
 	width: 93px;
 	height: 28px;
 	background-position: -9px -135px;
+}
+.cv-googleplay{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background-position: -120px -417px;
+  @media screen and (max-width: 750px) {
+    width: 75px;
+  }
 }
 
 //=============================

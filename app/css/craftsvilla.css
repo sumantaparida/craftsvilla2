@@ -5879,55 +5879,6 @@ button.close {
   border-radius: 50%;
 }
 
-.icon-fb-logo-grey {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -8px -82px;
-}
-
-.icon-tw-logo-grey {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -47px -82px;
-}
-
-.icon-pin-logo-grey {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -85px -82px;
-}
-
-.icon-wa-logo-grey {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -260px -124px;
-}
-
-.icon-fb-logo-color {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -123px -82px;
-}
-
-.icon-tw-logo-color {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -162px -82px;
-}
-
-.icon-pin-logo-color {
-  display: inline-block;
-  width: 34px;
-  height: 35px;
-  background-position: -200px -82px;
-}
-
 .icon-visacard {
   display: inline-block;
   width: 51px;
@@ -5949,11 +5900,35 @@ button.close {
   background-position: -223px -135px;
 }
 
+.cv-appstore {
+  display: inline-block;
+  width: 127px;
+  height: 40px;
+  background-position: -252px -417px;
+}
+@media screen and (max-width: 750px) {
+  .cv-appstore {
+    width: 75px;
+  }
+}
+
 .icon-googleplay {
   display: inline-block;
   width: 93px;
   height: 28px;
   background-position: -9px -135px;
+}
+
+.cv-googleplay {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-position: -120px -417px;
+}
+@media screen and (max-width: 750px) {
+  .cv-googleplay {
+    width: 75px;
+  }
 }
 
 .icon-arrow {
@@ -6626,7 +6601,7 @@ header {
   width: 17px;
   height: 17px;
   float: right;
-  line-height: 17px;
+  line-height: 18px;
   text-align: center;
   background-color: #FFFFFF;
   color: #981937;
@@ -7293,7 +7268,7 @@ header {
   border-radius: 2px;
   font-size: 12px;
   height: 28px;
-  line-height: 18px;
+  line-height: 20px;
 }
 .view-all:hover, .view-all:focus {
   text-decoration: none;
@@ -7333,6 +7308,47 @@ header {
     padding: 0px 7.5px;
     margin-bottom: 15px;
   }
+}
+
+.widgets-app-download {
+  background-color: #FFFFFF;
+  padding: 0px;
+}
+@media screen and (max-width: 760px) {
+  .widgets-app-download [class*=app-].app-left img {
+    width: 100%;
+  }
+}
+.widgets-app-download [class*=app-].app-right {
+  text-align: center;
+  padding: 35px 0px;
+}
+.widgets-app-download [class*=app-].app-right .download-now {
+  margin: 0px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ff4e63;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 760px) {
+  .widgets-app-download [class*=app-].app-right .download-now {
+    font-size: 100%;
+  }
+}
+.widgets-app-download [class*=app-].app-right .download-now span {
+  display: block;
+}
+.widgets-app-download [class*=app-].app-right p {
+  margin: 0px;
+}
+.widgets-app-download [class*=app-].app-right p a {
+  display: inline-block;
+}
+.widgets-app-download [class*=app-].app-right p a span {
+  margin: 0px 5px;
 }
 
 [page="home"] {
