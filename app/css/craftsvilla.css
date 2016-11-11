@@ -8612,6 +8612,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 .product-details-container .pdp-left-container div[class*=pdp-thumb-][class=pdp-thumb-viewer] .pdp-zoom p .sku-id {
   color: rgba(0, 0, 0, 0.54);
 }
+
 .product-details-container .pdp-right-container {
   float: left;
   width: 100%;
@@ -8624,19 +8625,20 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 .product-details-container .pdp-right-container .pdp-block {
   padding: 0px 0px 0px 0px;
 }
-.product-details-container .pdp-right-container .pdp-block h4 {
+.product-details-container .pdp-right-container .pdp-block h1 {
   margin: 0px 0px 10px 0px;
   color: #222222;
   float: left;
   width: 100%;
   position: relative;
+  font-size: 18px;
 }
 @media screen and (max-width: 760px) {
-  .product-details-container .pdp-right-container .pdp-block h4 {
+  .product-details-container .pdp-right-container .pdp-block h1 {
     padding-right: 25px;
   }
 }
-.product-details-container .pdp-right-container .pdp-block h4 span {
+.product-details-container .pdp-right-container .pdp-block h1 span {
   position: absolute;
   top: 0;
   right: 0;
@@ -8646,7 +8648,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   display: block;
 }
 @media screen and (min-width: 760px) {
-  .product-details-container .pdp-right-container .pdp-block h4 span {
+  .product-details-container .pdp-right-container .pdp-block h1 span {
     display: none;
   }
 }
@@ -8890,15 +8892,31 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   height: 100%;
 }
 
+@media screen and (max-width: 760px) {
+  .pdp-button-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 1501;
+    left: 0;
+  }
+}
 .pdp-button-container .btn {
   color: #fff;
   font-size: 16px;
-  border-radius: 2px;
+  border-radius: 0px;
   height: 50px;
   line-height: 41px;
   border: none;
   box-shadow: none;
-  margin-right: 5px;
+  float: left;
+}
+@media screen and (min-width: 760px) {
+  .pdp-button-container .btn {
+    margin-right: 5px;
+    border-radius: 2px;
+  }
 }
 .pdp-button-container .btn:focus, .pdp-button-container .btn:active {
   outline: none;
@@ -8906,13 +8924,23 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 .pdp-button-container .btn.btn-addtocart {
   background-color: #6b6b6b;
-  width: 180px;
+  width: 50%;
   text-align: center;
+}
+@media screen and (min-width: 760px) {
+  .pdp-button-container .btn.btn-addtocart {
+    width: 180px;
+  }
 }
 .pdp-button-container .btn.btn-buynow {
   background-color: #ff4e63;
-  width: 250px;
+  width: 50%;
   text-align: center;
+}
+@media screen and (min-width: 760px) {
+  .pdp-button-container .btn.btn-buynow {
+    width: 250px;
+  }
 }
 
 .pdp-buyer-protections p {
