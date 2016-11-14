@@ -65,6 +65,94 @@
     </div>
   </div>
   <!-- // Right Sticky end -->
+  <!-- // Login Popup start -->
+  <div class="login-container modal fad" id="loginModel" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-5 hidden-xs hidden-sm loginLeft text-center">
+              <h4>Benefits</h4>
+              <div class="col-xs-12 nopadding quick-orderrs">
+                <p><i class="icon manage-order"></i></p>
+                <p>
+                  <strong>Manage Orders</strong>
+                  <span>Track, Return & Cancel your orders</span
+                </p>
+              </div>
+              <div class="col-xs-12 nopadding quick-product">
+                <p><i class="icon manage-product"></i></p>
+                <p>
+                  <strong>Access Products that you love</strong>
+                  <span>Seamless access to Wishlist & Cart items</span
+                </p>
+              </div>
+              <div class="col-xs-12 nopadding quick-checkout">
+                <p><i class="icon manage-checkout"></i></p>
+                <p>
+                  <strong>Quicker Checkout</strong>
+                  <span>Saved Addresses & bank details for 3 step checkout</span
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 loginRight">
+              <button type="button" class="icon model-close" data-dismiss="modal"></button>
+              <h3>Login / Sign Up</h3>
+              <div class="col-xs-12 nopadding social-media-button">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="social-button-facebook ripplelink"><a href="#">Fcebook</a></div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="social-button-google ripplelink"><a href="#">Google</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- // Form start -->
+              <div class="col-xs-12 npadding login-form-section">
+                <div class="row">
+                  <hr>
+                  <p>Please provide your email to Login/Sign Up</p>
+                  <form action="">
+                    <div class="col-xs-12 nopadding input-field-wrapper">
+                      <input id="last_name" type="text" class="input-field">
+                      <label for="last_name">Enter Your Email</label>
+                    </div>
+                    <div class="col-xs-12 nopadding input-field-wrapper">
+                      <input id="password" type="password" class="input-field">
+                      <label for="password">Enter Password</label>
+                      <a href="#" class="forgot-password">forgot Password?</a>
+                    </div>
+                    <div class="col-xs-12 nopadding input-field-wrapper">
+                      <input id="set-password" type="password" class="input-field">
+                      <label for="set-password">Enter Password</label>
+                      <i class="icon pass-visibile"></i>
+                    </div>
+                    <div class="col-xs-12 nopadding terms-condition">
+                      <p class="pull-left">
+                        <span>
+                          <label for="term-checkbox">
+                            <input id="term-checkbox" type="checkbox">
+                            <span class="term-checkbox"></span>
+                          </label>
+                        </span>
+                        <span>By registering, I agree to <a href="#">Terms & Conditions</a></span>
+                      </p>
+                    </div>
+                    <div class="col-xs-12 nopadding">
+                      <button type="button" class="continue-btn ripplelink">CONTINUE</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- // Form end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Login Popup end -->
   <!-- // Header Start -->
   <header class="container-fluid nopadding">
       <!-- //Main Nav -->
@@ -129,7 +217,11 @@
                           <li class="visible-xs"><a href="#"><i class="icon cv-search"></i></a></li>
                           <li><a href="#" data-cart><i class="icon cv-cart"><span class="circle">0</span></i><span class="hidden-xs">Cart </span></a></li>
                           <li>
-                            <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon cv-login"></i> <span class="hidden-xs">Hello, Bhavin</span><i class="icon first_arrow hidden-xs"></i></a>
+                            <a href="#" class="dropdown-toggle" type="button" data-toggle="modal" data-target="#loginModel">
+                              <i class="icon cv-login"></i>
+                              <span class="hidden-xs">Hello, Bhavin</span>
+                              <i class="icon first_arrow hidden-xs"></i>
+                            </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INR (&#x20B9;)</a></li>

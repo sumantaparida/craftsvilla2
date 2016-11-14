@@ -74,9 +74,9 @@
         cursor: pointer;
         letter-spacing: 0.5px;
         @media screen and (max-width: breakpoint(sm)) {
-          @include background-bg(cv_text_dark_3);
+          @include background-bg($cv-black12);
           @include display;
-          color: $mm_link_default;
+          color: $cv-black100;
           padding: 10px 15px 8px;
           text-align: left;
         }

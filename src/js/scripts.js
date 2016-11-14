@@ -21,4 +21,15 @@ $(function(){
     ink.css({top: y+'px', left: x+'px'}).addClass("animate");
   });
 // Effect End
+
+//
+function demo(){
+  $.getJSON('megamenu.json', function (data) {
+    console.log(data);
+    alert("0");
+  });
+};
+demo();
+//
+
 });

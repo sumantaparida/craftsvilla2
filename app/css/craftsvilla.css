@@ -4760,7 +4760,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1501;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -4810,7 +4810,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1500;
   background-color: #000;
 }
 .modal-backdrop.fade {
@@ -5686,7 +5686,7 @@ button.close {
     display: none !important;
   }
 }
-.icon, ul[role=filter] > li h5 > span.icon-arrow, .loggedin_widgets .order-status-container .order-status-left::after, .loggedin_widgets .order-status-container .order-status-right [class*=box-]::before, ul[role=filter] > li h5 > label input[type="checkbox"]:checked + span, ul.sub-menu > li > label > input[type=checkbox]:checked + label, .sub-menu-color > li label input[type=checkbox]:checked + label, .tab-right-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
+.icon, ul[role=filter] > li h5 > span.icon-arrow, .terms-condition .term-checkbox, .loggedin_widgets .order-status-container .order-status-left::after, .loggedin_widgets .order-status-container .order-status-right [class*=box-]::before, ul[role=filter] > li h5 > label input[type="checkbox"]:checked + span, ul.sub-menu > li > label > input[type=checkbox]:checked + label, .sub-menu-color > li label input[type=checkbox]:checked + label, .tab-right-content .tab-pane ul li label input[type="checkbox"]:checked ~ label {
   background-repeat: no-repeat;
   background-image: url("../img/cv-sprite.png");
   background-size: auto;
@@ -5812,6 +5812,26 @@ button.close {
 
 .acces-your-orders {
   background-position: -119px -357px;
+}
+
+.model-close {
+  background-position: -314px -13px;
+}
+
+.manage-order {
+  background-position: -100px -234px;
+}
+
+.manage-product {
+  background-position: -8px -228px;
+}
+
+.manage-checkout {
+  background-position: -55px -228px;
+}
+
+.pass-visibile {
+  background-position: -318px -76px;
 }
 
 .cv-wishlist {
@@ -6748,9 +6768,9 @@ header {
 }
 @media screen and (max-width: 760px) {
   #mega-menu ul[data-mega-menu] > li > a {
-    background-color: cv_text_dark_3;
+    background-color: rgba(0, 0, 0, 0.12);
     display: block;
-    color: #FFFFFF;
+    color: black;
     padding: 10px 15px 8px;
     text-align: left;
   }
@@ -7118,6 +7138,214 @@ header {
 }
 .right-sticky-container .sticky-wrapper ul li a:hover .cv-app {
   background-position: -195px -73px;
+}
+
+@media (min-width: 768px) {
+  .login-container .modal-dialog {
+    width: 669px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+  }
+}
+.login-container .modal-dialog .modal-content {
+  border-radius: 2px;
+  float: left;
+  width: 100%;
+}
+.login-container .modal-dialog .modal-content .model-close {
+  width: 17px;
+  height: 16px;
+  border: none;
+  float: right;
+  background-color: inherit;
+  margin-right: -15px;
+}
+.login-container .modal-dialog .modal-content .modal-body {
+  padding: 0px 15px;
+}
+
+.loginLeft {
+  background-color: #fcfcfc;
+  padding: 15px;
+}
+.loginLeft h4 {
+  margin: 20px 0px 0px 0px;
+}
+.loginLeft [class*=quick-] {
+  margin-top: 15px;
+}
+.loginLeft [class*=quick-] p span {
+  display: inline-block;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  width: 65%;
+}
+.loginLeft [class*=quick-] p .icon, .loginLeft [class*=quick-] p ul[role=filter] > li h5 > span.icon-arrow, ul[role=filter] > li .loginLeft [class*=quick-] p h5 > span.icon-arrow {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.loginLeft [class*=quick-] p .icon.manage-order, .loginLeft [class*=quick-] p ul[role=filter] > li h5 > span.manage-order.icon-arrow, ul[role=filter] > li .loginLeft [class*=quick-] p h5 > span.manage-order.icon-arrow {
+  height: 28px;
+}
+.loginLeft [class*=quick-] p:first-child {
+  margin-bottom: 0px;
+}
+
+.loginRight {
+  padding: 15px 30px;
+}
+.loginRight h3 {
+  margin: 0px 0px 15px 0px;
+  float: left;
+  width: 100%;
+}
+.loginRight .social-media-button {
+  margin-bottom: 15px;
+}
+.loginRight [class*=social-button-] {
+  text-align: center;
+  line-height: 20px;
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+.loginRight [class*=social-button-] a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.loginRight [class*=social-button-] a:hover, .loginRight [class*=social-button-] a:focus {
+  text-decoration: none;
+}
+.loginRight [class*=social-button-].social-button-facebook {
+  background-color: #4962ba;
+}
+.loginRight [class*=social-button-].social-button-google {
+  background-color: #e05444;
+}
+
+.login-form-section hr {
+  margin: 5px 5px 20px 5px;
+  position: relative;
+}
+.login-form-section hr::after {
+  content: 'OR';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #82848e;
+}
+.login-form-section p {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.input-field-wrapper {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.input-field-wrapper .input-field {
+  width: 100%;
+  padding: 5px 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #ededed;
+  position: relative;
+}
+.input-field-wrapper .input-field:focus, .input-field-wrapper .input-field.active {
+  outline: none;
+  border-bottom: solid 1px #448aff;
+}
+.input-field-wrapper .input-field:focus + label, .input-field-wrapper .input-field.active + label {
+  top: -15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.input-field-wrapper label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: .2s ease-out;
+  font-weight: normal;
+  cursor: text;
+}
+.input-field-wrapper .forgot-password {
+  position: absolute;
+  right: 0;
+  color: #448aff;
+  bottom: 5px;
+  font-size: 12px;
+}
+.input-field-wrapper .forgot-password:hover, .input-field-wrapper .forgot-password:focus {
+  text-decoration: none;
+}
+.input-field-wrapper .pass-visibile {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 17px;
+  bottom: 8px;
+  cursor: pointer;
+}
+
+.terms-condition {
+  text-align: center;
+  margin-top: 15px;
+}
+.terms-condition input[type="checkbox"] {
+  display: none;
+}
+.terms-condition input[type="checkbox"]:checked + span {
+  background-color: #ff4e63;
+  background-position: -113px -13px;
+  border: solid 1px #ff4e63;
+}
+.terms-condition p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.terms-condition p > span {
+  float: left;
+}
+.terms-condition .term-checkbox {
+  display: inline-block;
+  border: solid 1px rgba(93, 93, 93, 0.5);
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.continue-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #ff4e63;
+  color: #FFFFFF;
+  border-radius: 2px;
+  padding: 10px 10px 6px 10px;
+  border: none;
+  line-height: 22px;
+}
+.continue-btn:focus {
+  outline: none;
 }
 
 .carousel-section {
