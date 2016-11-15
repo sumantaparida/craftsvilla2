@@ -1,5 +1,23 @@
+// Hack Model start
+.modal-open {
+  @media (max-width: $screen-sm-min) {
+    //overflow: inherit;
+  }
+}
+.modal {
+  @media (max-width: $screen-sm-min) {
+    position: relative;
+  }
+}
+.modal-backdrop {
+  @media (max-width: $screen-sm-min) {
+    display: none;
+  }
+}
+// Hack Model End
 .login-container {
   .modal-dialog {
+    margin: 0px;
     // Scale up the modal
     @media (min-width: $screen-sm-min) {
       width: 669px;
@@ -7,18 +25,28 @@
       left: 0;
       right: 0;
       top: 15%;
+      margin: auto;
     }
     .modal-content {
       border-radius: 2px;
       float: left;
       width: 100%;
+      @media (max-width: $screen-sm-min) {
+        border: none;
+        box-shadow: none;
+        border-radius: 0px;
+      }
       .model-close {
         width: 17px;
         height: 16px;
         border: none;
         float: right;
         background-color: inherit;
-        margin-right: -15px;
+        display: none;
+        @media (min-width: $screen-sm-min) {
+          margin-right: -15px;
+          display: block;
+        }
       }
       // modal-body
       .modal-body {
@@ -61,6 +89,9 @@
 // Login Right
 .loginRight {
   padding: 15px 30px;
+  @media (max-width: $screen-sm-min) {
+    padding: 15px;
+  }
   h3 {
     margin: 0px 0px 15px 0px;
     float: left;

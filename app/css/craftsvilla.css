@@ -7140,6 +7140,21 @@ header {
   background-position: -195px -73px;
 }
 
+@media (max-width: 768px) {
+  .modal {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-backdrop {
+    display: none;
+  }
+}
+
+.login-container .modal-dialog {
+  margin: 0px;
+}
 @media (min-width: 768px) {
   .login-container .modal-dialog {
     width: 669px;
@@ -7147,6 +7162,7 @@ header {
     left: 0;
     right: 0;
     top: 15%;
+    margin: auto;
   }
 }
 .login-container .modal-dialog .modal-content {
@@ -7154,13 +7170,26 @@ header {
   float: left;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .login-container .modal-dialog .modal-content {
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}
 .login-container .modal-dialog .modal-content .model-close {
   width: 17px;
   height: 16px;
   border: none;
   float: right;
   background-color: inherit;
-  margin-right: -15px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .login-container .modal-dialog .modal-content .model-close {
+    margin-right: -15px;
+    display: block;
+  }
 }
 .login-container .modal-dialog .modal-content .modal-body {
   padding: 0px 15px;
@@ -7196,6 +7225,11 @@ header {
 
 .loginRight {
   padding: 15px 30px;
+}
+@media (max-width: 768px) {
+  .loginRight {
+    padding: 15px;
+  }
 }
 .loginRight h3 {
   margin: 0px 0px 15px 0px;

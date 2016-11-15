@@ -30,6 +30,20 @@ function demo(){
   });
 };
 demo();
-//
-
+// login popup
+loginpopup();
 });
+
+
+// login popup
+function loginpopup(){
+  var header = $("header").outerHeight();
+  var logincontent = $(window).height() - header;
+  //$(".login-content").style.height = logincontent + "px";
+  if($(window).width() <= 768 ) {
+    document.getElementById("login-content").style.height = logincontent + "px";
+    //document.getElementsByClassName("login-content").style.height = logincontent + "px";
+  } else {
+
+  }
+}
