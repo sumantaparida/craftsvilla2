@@ -7367,7 +7367,7 @@ header {
   margin-top: 1px;
 }
 
-.continue-btn {
+.continue-btn, .common-btn {
   width: 100%;
   text-align: center;
   margin-top: 15px;
@@ -7378,7 +7378,12 @@ header {
   border: none;
   line-height: 22px;
 }
-.continue-btn:focus {
+@media (min-width: 768px) {
+  .continue-btn, .common-btn {
+    max-width: 330px;
+  }
+}
+.continue-btn:focus, .common-btn:focus {
   outline: none;
 }
 
@@ -9598,8 +9603,9 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   font-weight: bold;
 }
 .noresult_container p {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+  font-size: 16px;
 }
 .noresult_container p.spacial_searches {
   display: none;
@@ -9654,6 +9660,29 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   width: 15px;
   height: 10px;
   margin-right: 10px;
+}
+
+.cv-404 {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.common-btn {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  padding: 15px 10px 12px;
+}
+
+.cv-maintainence {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.siteTight {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
 }
 
 .footer-container {

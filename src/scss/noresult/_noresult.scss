@@ -25,8 +25,9 @@
     }
   }
   p {
-    color: $cv-black87;
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
+    font-size: $font-size-md;
     &.spacial_searches {
       display: none;
       @media screen and (min-width: breakpoint(sm)){

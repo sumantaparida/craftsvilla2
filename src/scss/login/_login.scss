@@ -235,7 +235,7 @@
   }
 }
 // continue button
-.continue-btn {
+.continue-btn, .common-btn {
   width: 100%;
   text-align: center;
   margin-top: 15px;
@@ -245,6 +245,9 @@
   padding: 10px 10px 6px 10px;
   border: none;
   line-height: 22px;
+  @media (min-width: $screen-sm-min) {
+    max-width: 330px;
+  }
   &:focus {
     outline: none;
   }
