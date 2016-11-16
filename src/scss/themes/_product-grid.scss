@@ -22,32 +22,6 @@
     // -moz-transition: all 1s ease-in-out;
     // -o-transition: all 1s ease-in-out;
     // transition: all 1s ease-in-out;
-    @media screen and (max-width: breakpoint(sm)){
-      position: relative;
-      border-left: solid 1px red;
-      // border-right: solid 1px red;
-      border-top: solid 1px green;
-      // border-bottom: solid 1px green;
-      margin: 0px;
-      &::before {
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 0;
-        height: 100%;
-        width: 1px;
-        background-color: red;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0px;
-        bottom: 0;
-        height: 1px;
-        width: 100%;
-        background-color: #000;
-      }
-    }
     .product {
       padding: 0px;
       background-color: #fff;
@@ -148,6 +122,9 @@
   .product-box {
     @media screen and (min-width: breakpoint(sm)){
       width: 33.33333%;
+    }
+    @media screen and (max-width: breakpoint(sm)){
+      width: 100%;
     }
   }
 }

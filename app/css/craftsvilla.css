@@ -6276,6 +6276,12 @@ header {
     height: 105px;
   }
 }
+@media screen and (max-width: 760px) {
+  .craftsvilla-navbar > .container {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
 .craftsvilla-navbar .mobile-menu {
   float: left;
   width: 30px;
@@ -6528,6 +6534,8 @@ header {
     left: 0;
     top: 40px;
     width: 100%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
   }
 }
 
@@ -7385,6 +7393,11 @@ header {
 }
 .continue-btn:focus, .common-btn:focus {
   outline: none;
+}
+
+[content-wrapper] > .container {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
 }
 
 .carousel-section {
@@ -8315,6 +8328,12 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   left: 12px !important;
 }
 
+@media screen and (max-width: 760px) {
+  .sortByWrapper > .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+}
 .sortByWrapper::before {
   content: '';
   position: absolute;
@@ -8496,32 +8515,6 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   padding: 0 7.5px;
   transition: width .5s ease;
 }
-@media screen and (max-width: 760px) {
-  .product-row .product-box {
-    position: relative;
-    border-left: solid 1px red;
-    border-top: solid 1px green;
-    margin: 0px;
-  }
-  .product-row .product-box::before {
-    content: '';
-    position: absolute;
-    right: 0px;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    background-color: red;
-  }
-  .product-row .product-box::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background-color: #000;
-  }
-}
 .product-row .product-box .product {
   padding: 0px;
   background-color: #fff;
@@ -8620,6 +8613,11 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
     width: 33.33333%;
   }
 }
+@media screen and (max-width: 760px) {
+  [wrapperattribute="big"] .product-box {
+    width: 100%;
+  }
+}
 
 .quickView {
   color: red;
@@ -8711,6 +8709,47 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   text-align: center;
 }
 
+@media screen and (max-width: 760px) {
+  [content-wrapper="category"] [wrapperattribute="small"] .product-row .product-box:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #e0e0e0;
+  }
+}
+@media screen and (max-width: 760px) {
+  [content-wrapper="category"] [wrapperattribute="small"] .product-row .product-box {
+    position: relative;
+    border-left: solid 1px #e0e0e0;
+    margin: 0px;
+  }
+  [content-wrapper="category"] [wrapperattribute="small"] .product-row .product-box::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #e0e0e0;
+  }
+  [content-wrapper="category"] [wrapperattribute="small"] .product-row .product-box::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e0e0e0;
+  }
+}
+[content-wrapper="category"] [wrapperattribute="big"] .product-box {
+  border: solid 1px #e0e0e0;
+  margin: 0px;
+}
+
 [data-content-wrapper] {
   padding: 0px;
 }
@@ -8730,6 +8769,12 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 
 .product-search-name-count {
   margin-bottom: 3px;
+}
+@media screen and (max-width: 760px) {
+  .product-search-name-count {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
 }
 .product-search-name-count .product-name {
   font-weight: bold;
@@ -9379,32 +9424,6 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   padding: 0 7.5px;
   transition: width .5s ease;
 }
-@media screen and (max-width: 760px) {
-  .product-row .product-box {
-    position: relative;
-    border-left: solid 1px red;
-    border-top: solid 1px green;
-    margin: 0px;
-  }
-  .product-row .product-box::before {
-    content: '';
-    position: absolute;
-    right: 0px;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    background-color: red;
-  }
-  .product-row .product-box::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background-color: #000;
-  }
-}
 .product-row .product-box .product {
   padding: 0px;
   background-color: #fff;
@@ -9501,6 +9520,11 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 @media screen and (min-width: 760px) {
   [wrapperattribute="big"] .product-box {
     width: 33.33333%;
+  }
+}
+@media screen and (max-width: 760px) {
+  [wrapperattribute="big"] .product-box {
+    width: 100%;
   }
 }
 

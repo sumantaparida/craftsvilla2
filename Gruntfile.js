@@ -40,13 +40,15 @@ module.exports = function(grunt) {
     },
     concat: {
         dev: {
-            files: {
-                '<%= project.app %>/js/scripts.min.js': '<%= project.js %>'
-            }
+            files: {'<%= project.app %>/js/scripts.min.js': '<%= project.js %>'}
         },
-        options: {
-            stripBanners: true,
-            nonull: true,
+        script: {
+          src: [
+            '<%= project.src %>/js/material-effect.js',
+            '<%= project.src %>/js/login.js',
+            '<%= project.src %>/js/navigation.js'
+          ],
+          dest: '<%= project.src %>/js/craftsvilla.js'
         }
     },
     sass: {
@@ -86,19 +88,27 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-        dev: {
-          files: {
-              '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
-              '<%= project.app %>/js/jquery.min.js': ['<%= project.jquery %>'],
-              '<%= project.app %>/js/bootstrap.min.js': ['<%= project.bootstrap %>']
-          }
+      options: {
+        compress: {
+          warnings: false
         },
-        dist: {
-            files: {
-                '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
-                '<%= project.app %>/js/bootstrap.min.js': ['<%= project.js %>']
-            }
+        mangle: true,
+        preserveComments: /^!|@preserve|@license|@cc_on/i
+      },
+      dev: {
+        files: {
+          '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
+          '<%= project.app %>/js/jquery.min.js': ['<%= project.jquery %>'],
+          '<%= project.app %>/js/bootstrap.min.js': ['<%= project.bootstrap %>'],
+          '<%= project.app %>/js/craftsvilla.min.js': ['<%= concat.script.dest %>']
         }
+      },
+      dist: {
+        files: {
+          '<%= project.app %>/js/scripts.min.js': ['<%= project.js %>'],
+          '<%= project.app %>/js/bootstrap.min.js': ['<%= project.js %>']
+        }
+      }
     },
     open: {
         server: {
@@ -108,7 +118,7 @@ module.exports = function(grunt) {
     watch: {
         concat: {
             files: '<%= project.src %>/js/{,*/}*.js',
-            tasks: ['concat:dev']
+            tasks: ['concat:dev', 'concat:script', 'uglify:dev']
         },
         sass: {
             files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
@@ -136,6 +146,7 @@ module.exports = function(grunt) {
       'uglify:dev',
       'cssmin:dev',
       'concat:dev',
+      'concat:script',
       'connect:livereload',
       'open',
       'watch'

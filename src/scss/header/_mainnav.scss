@@ -4,6 +4,12 @@
 	@media screen and (max-width: breakpoint(sm)) {
 		height: 105px;
 	}
+	& > .container {
+		@media screen and (max-width: breakpoint(sm)) {
+			padding-left: 7.5px;
+			padding-right: 7.5px;
+		}
+	}
 	.mobile-menu {
 		float: left;
 		width: 30px;

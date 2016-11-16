@@ -16,3 +16,11 @@ header {
 @import "right-sticky-container.scss";
 // Login Model Start
 @import "../login/login.scss";
+
+// Common Page
+[content-wrapper] {
+  & > .container {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
