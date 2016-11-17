@@ -67,7 +67,7 @@
       & > a {
         padding: 0px 0px 9px 0px;
         @include display(inline-block);
-        font-size: $cv-font-normal;
+        font-size: $font-size-sm;
         @include font-weight(normal);
         color: $mm_link_default;
         text-align: center;

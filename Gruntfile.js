@@ -44,9 +44,9 @@ module.exports = function(grunt) {
         },
         script: {
           src: [
+            '<%= project.src %>/js/navigation.js',
             '<%= project.src %>/js/material-effect.js',
-            '<%= project.src %>/js/login.js',
-            '<%= project.src %>/js/navigation.js'
+            '<%= project.src %>/js/login.js'
           ],
           dest: '<%= project.src %>/js/craftsvilla.js'
         }
