@@ -19,6 +19,7 @@
   "devDependencies": {
     "connect-livereload": "^0.6.0",
     "grunt": "^1.0.1",
+    "grunt-cache-bust": "^1.4.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-cssmin": "^1.0.2",

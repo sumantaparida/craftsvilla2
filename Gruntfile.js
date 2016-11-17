@@ -135,6 +135,15 @@ module.exports = function(grunt) {
                 '<%= project.app %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             ]
         }
+    },
+    cacheBust: {
+      js: {
+           options: {
+               baseDir: '<%= project.app %>/',
+               assets: ['js/craftsvilla.min.js']
+           },
+           src: ['<%= project.app %>/index.html']
+       },
     }
 
   });
