@@ -45,6 +45,16 @@
         width: 250px;
       }
     }
+    &.btn-soldout {
+      background-color: transparent;
+      border: solid 1px $cv-p0;
+      color: $cv-p0;
+      width: 100%;
+      text-align: center;
+      @media screen and (min-width: breakpoint(sm)) {
+        width: 250px;
+      }
+    }
   }
 }
 // Buyer protection start

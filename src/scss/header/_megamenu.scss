@@ -53,7 +53,7 @@
       @include width-percent(auto);
       float: left;
       text-align: left;
-      padding: 0px 15px;
+      padding: 0px 10px;
       @media screen and (max-width: breakpoint(sm)) {
         @include width-percent;
         float: left;
@@ -211,7 +211,7 @@
       }
     }
     > li:nth-of-type(2) {
-      padding: 0px 20px 0px 0px;
+      padding: 0px 10px 0px 0px;
     }
     //
     div[data-sub-menu] {

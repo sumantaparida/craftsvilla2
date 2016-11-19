@@ -6748,7 +6748,7 @@ header {
   width: auto;
   float: left;
   text-align: left;
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 @media screen and (max-width: 760px) {
   #mega-menu ul[data-mega-menu] > li {
@@ -6894,7 +6894,7 @@ header {
   cursor: pointer;
 }
 #mega-menu ul[data-mega-menu] > li:nth-of-type(2) {
-  padding: 0px 20px 0px 0px;
+  padding: 0px 10px 0px 0px;
 }
 #mega-menu ul[data-mega-menu] div[data-sub-menu] {
   position: absolute;
@@ -7202,6 +7202,13 @@ header {
 .login-container .modal-dialog .modal-content .modal-body {
   padding: 0px 15px;
 }
+@media (min-width: 768px) {
+  .login-container .modal-dialog .modal-content .modal-body > .row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
 
 .loginLeft {
   background-color: #fcfcfc;
@@ -7232,7 +7239,7 @@ header {
 }
 
 .loginRight {
-  padding: 15px 30px;
+  padding: 15px 30px 30px 30px;
 }
 @media (max-width: 768px) {
   .loginRight {
@@ -7240,7 +7247,7 @@ header {
   }
 }
 .loginRight h3 {
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 35px 0px;
   float: left;
   width: 100%;
 }
@@ -7285,15 +7292,17 @@ header {
   margin: auto;
   text-align: center;
   background-color: #FFFFFF;
-  color: #82848e;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  line-height: 24px;
 }
 .login-form-section p {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .input-field-wrapper {
   margin-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .input-field-wrapper .input-field {
   width: 100%;
@@ -7319,7 +7328,7 @@ header {
   left: 0;
   padding: 5px 0px;
   margin-bottom: 0px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.54);
   transition: .2s ease-out;
   font-weight: normal;
   cursor: text;
@@ -7351,9 +7360,9 @@ header {
   display: none;
 }
 .terms-condition input[type="checkbox"]:checked + span {
-  background-color: #ff4e63;
+  background-color: #448aff;
   background-position: -113px -13px;
-  border: solid 1px #ff4e63;
+  border: solid 1px #448aff;
 }
 .terms-condition p {
   float: left;
@@ -9251,6 +9260,18 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 @media screen and (min-width: 760px) {
   .pdp-button-container .btn.btn-buynow {
+    width: 250px;
+  }
+}
+.pdp-button-container .btn.btn-soldout {
+  background-color: transparent;
+  border: solid 1px #ff4e63;
+  color: #ff4e63;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 760px) {
+  .pdp-button-container .btn.btn-soldout {
     width: 250px;
   }
 }

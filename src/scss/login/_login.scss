@@ -51,6 +51,13 @@
       // modal-body
       .modal-body {
         padding: 0px 15px;
+        & > .row {
+          @media (min-width: $screen-sm-min) {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+          }
+        }
       }
     }
   }
@@ -88,12 +95,12 @@
 
 // Login Right
 .loginRight {
-  padding: 15px 30px;
+  padding: 15px 30px 30px 30px;
   @media (max-width: $screen-sm-min) {
     padding: 15px;
   }
   h3 {
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 35px 0px;
     float: left;
     width: 100%;
   }
@@ -139,17 +146,19 @@
       margin: auto;
       text-align: center;
       background-color: $white100;
-      color: #82848e;
+      color: rgba(0,0,0,0.54);
+      font-size: $font-size-sm;
+      line-height: 24px;
     }
   }
   p {
-    color: $cv-black54;
+    color: $cv-black87;
   }
 }
 // input-field
 .input-field-wrapper {
   margin-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   .input-field {
     width: 100%;
     padding: 5px 0px;
@@ -175,7 +184,7 @@
     left: 0;
     padding: 5px 0px;
     margin-bottom: 0px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.54);
     transition: .2s ease-out;
     font-weight: normal;
     cursor: text;
@@ -207,9 +216,9 @@
     display: none;
     &:checked {
       & + span {
-        background-color: $cv-p0;
+        background-color: $cv-p6;
         background-position: -113px -13px;
-        border: solid 1px $cv-p0;
+        border: solid 1px $cv-p6;
       }
     }
   }
