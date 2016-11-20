@@ -6793,7 +6793,7 @@ header {
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  margin: 6px 0px 0px 8px;
+  margin: 5px 0px 0px 8px;
 }
 #mega-menu ul[data-mega-menu] > li > a:hover {
   text-decoration: none;
@@ -6907,7 +6907,7 @@ header {
   z-index: -1;
 }
 #mega-menu ul[data-mega-menu] div[data-sub-menu] .sub-menu-wrapper {
-  padding: 0px 80px 0px 0px;
+  padding: 0px;
 }
 #mega-menu ul[data-mega-menu] div[data-sub-menu] .sub-menu-wrapper > ul {
   padding: 0px;
@@ -7133,7 +7133,7 @@ header {
   background-position: -63px -75px;
 }
 .right-sticky-container .sticky-wrapper ul li a:hover .cv-track-order {
-  background-position: -87px -74px;
+  background-position: -87px -73px;
 }
 .right-sticky-container .sticky-wrapper ul li a:hover .cv-customer-review {
   background-position: -114px -73px;
@@ -9775,7 +9775,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   letter-spacing: 0.8px;
   color: #212121;
   margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 0 solid red;
   text-transform: uppercase;
 }
