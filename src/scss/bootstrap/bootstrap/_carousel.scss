@@ -193,12 +193,12 @@
   text-align: center;
   background-color: rgba(0,0,0,0.4);
   border-radius: 40px;
-  padding: 3px;
+  padding: 3px 3px 0px 3px;
   li {
     display: inline-block;
-    width:  12px;
-    height: 12px;
-    margin: 6px 1px 1px 1px;
+    width:  10px;
+    height: 10px;
+    margin: 3px 1px 1px 1px;
     text-indent: -999px;
     border-radius: 10px;
     cursor: pointer;
@@ -206,8 +206,8 @@
   }
   .active {
     //margin: 0;
-    width:  12px;
-    height: 12px;
+    width:  10px;
+    height: 10px;
     background-color: $carousel-indicator-active-bg;
   }
 }

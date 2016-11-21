@@ -52,6 +52,7 @@
         @media screen and (min-width: breakpoint(sm)) {
           margin-top: 10px;
     			float: right;
+          margin-right: 25px;
     		}
       }
       a {
@@ -102,6 +103,24 @@
         strong {
           float: left;
           line-height: 37px;
+        }
+      }
+      //
+      & > div {
+        &:nth-of-type(1) {
+          @media screen and (min-width: breakpoint(sm)) {
+            width: 39%;
+          }
+        }
+        &:nth-of-type(2) {
+          @media screen and (min-width: breakpoint(sm)) {
+            width: 33%;
+          }
+        }
+        &:nth-of-type(3) {
+          @media screen and (min-width: breakpoint(sm)) {
+            width: 28%;
+          }
         }
       }
     }

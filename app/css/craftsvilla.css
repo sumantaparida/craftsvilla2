@@ -5321,21 +5321,21 @@ button.close {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 40px;
-  padding: 3px;
+  padding: 3px 3px 0px 3px;
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 6px 1px 1px 1px;
+  width: 10px;
+  height: 10px;
+  margin: 3px 1px 1px 1px;
   text-indent: -999px;
   border-radius: 10px;
   cursor: pointer;
   background-color: #fff;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #ff4e63;
 }
 
@@ -7060,7 +7060,7 @@ header {
 .right-sticky-container .sticky-wrapper ul li {
   float: left;
   width: 100%;
-  margin-bottom: 5px;
+  margin: 5px 0px;
 }
 .right-sticky-container .sticky-wrapper ul li a {
   display: block;
@@ -7485,6 +7485,7 @@ header {
   .loggedin_widgets .order-status-container .order-status-left .acces-text {
     margin-top: 10px;
     float: right;
+    margin-right: 25px;
   }
 }
 .loggedin_widgets .order-status-container .order-status-left a {
@@ -7529,6 +7530,21 @@ header {
 .loggedin_widgets .order-status-container .order-status-right [class*=box-] strong {
   float: left;
   line-height: 37px;
+}
+@media screen and (min-width: 760px) {
+  .loggedin_widgets .order-status-container .order-status-right > div:nth-of-type(1) {
+    width: 39%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .loggedin_widgets .order-status-container .order-status-right > div:nth-of-type(2) {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .loggedin_widgets .order-status-container .order-status-right > div:nth-of-type(3) {
+    width: 28%;
+  }
 }
 
 .headding {

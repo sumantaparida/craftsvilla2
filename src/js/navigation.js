@@ -9,6 +9,8 @@
   // NAVIGATION START
   // ============================================================
   console.log("Navigation sumanta");
+  // Home page Attribute Add
+  $(".cms-index-index").attr('page', 'home');
   if($(window).width() < 1005){
     console.log("if");
   }
