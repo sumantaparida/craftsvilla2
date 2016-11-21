@@ -5704,6 +5704,14 @@ button.close {
   background-position: -39px -9px;
 }
 
+.cv-mob-wishlist {
+  background-position: -238px -278px;
+}
+
+.cv-mob-wishlist-active {
+  background-position: -269px -280px;
+}
+
 .cv-login-dark {
   background-position: -63px -43px;
 }
@@ -6606,6 +6614,10 @@ header {
   transition: all .5s ease-in-out;
 }
 .authentication-container > ul > li > a .icon.cv-login, .authentication-container > ul > li > a ul[role=filter] > li h5 > span.cv-login.icon-arrow, ul[role=filter] > li .authentication-container > ul > li > a h5 > span.cv-login.icon-arrow {
+  width: 22px;
+  height: 22px;
+}
+.authentication-container > ul > li > a .icon.cv-mob-wishlist, .authentication-container > ul > li > a ul[role=filter] > li h5 > span.cv-mob-wishlist.icon-arrow, ul[role=filter] > li .authentication-container > ul > li > a h5 > span.cv-mob-wishlist.icon-arrow, .authentication-container > ul > li > a .icon.cv-mob-wishlist-active, .authentication-container > ul > li > a ul[role=filter] > li h5 > span.cv-mob-wishlist-active.icon-arrow, ul[role=filter] > li .authentication-container > ul > li > a h5 > span.cv-mob-wishlist-active.icon-arrow {
   width: 22px;
   height: 22px;
 }

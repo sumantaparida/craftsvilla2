@@ -110,6 +110,10 @@
 						@include width-percent(22px);
 						@include height-auto(22px);
 					}
+					&.cv-mob-wishlist, &.cv-mob-wishlist-active {
+						@include width-percent(22px);
+						@include height-auto(22px);
+					}
 					&.first_arrow {
 						@include width-percent(9px);
             @include height-auto(6px);
