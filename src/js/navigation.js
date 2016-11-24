@@ -117,7 +117,7 @@
       output+="</li>";
     }
     output+="</ul>";
-    document.getElementById("navigation").innerHTML = output;
+    document.getElementsByClassName("navigation-test")[0].innerHTML = output;
   });
 
 }(jQuery);

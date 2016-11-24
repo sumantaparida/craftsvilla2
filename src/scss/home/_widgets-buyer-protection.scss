@@ -1,0 +1,71 @@
+.widgets-buyer-protection {
+  background-color: #fff;
+  padding: 7.5px 0px;
+  border-radius: 2px;
+  & > div {
+    padding: 0px 7.5px;
+  }
+  [class*=assurance-] {
+    position: relative;
+    padding-left: 35px;
+    line-height: 14px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    min-height: 37px;
+    width: 100%;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 32px;
+      left: 0px;
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+      @extend %sprite-image;
+    }
+    &.assurance-buyer {
+      &::before {
+        background-position: -156px -356px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: -7.5px;
+        top: 0;
+        bottom: 0;
+        background-color: #f0f0f0;
+        margin: auto;
+      }
+    }
+    &.assurance-secure {
+      &::before {
+        background-position: -194px -355px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: -7.5px;
+        top: 0;
+        bottom: 0;
+        background-color: #f0f0f0;
+        margin: auto;
+      }
+    }
+    &.assurance-easy {
+      &::before {
+        background-position: -235px -356px;
+      }
+    }
+  }
+  strong {
+    margin-top: 5px;
+    display: block;
+  }
+}

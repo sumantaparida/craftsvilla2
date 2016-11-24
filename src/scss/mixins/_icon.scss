@@ -13,7 +13,7 @@
 	background-position: -135px -17px;
 }
 .cv-search {
-	background-position: -283px -72px;
+	background-position: -287px -73px;
 }
 .cv-login {
 	background-position: -39px -9px;
@@ -289,7 +289,9 @@
 	height: 40px;
 	background-position: -252px -417px;
   @media screen and (max-width: 750px) {
-    width: 75px;
+    width: 80px;
+    height: 25px;
+    background-position: -310px -505px;
   }
 }
 //=============================
@@ -309,6 +311,8 @@
 	background-position: -120px -417px;
   @media screen and (max-width: 750px) {
     width: 75px;
+    height: 25px;
+    background-position: -227px -505px;
   }
 }
 

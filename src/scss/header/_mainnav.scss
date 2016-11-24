@@ -13,13 +13,13 @@
 	.mobile-menu {
 		float: left;
 		width: 30px;
-		padding: 20px 0px;
+		padding: 18px 0 20px 0;
 		span {
 			float: left;
-			height: 3px;
+			height: 2px;
 			@include background-bg(#fff);
-			@include width-percent(75%);
-			margin-bottom: 5px;
+			@include width-percent(20px);
+			margin: 2px 0px;
 			&:last-child {
 				margin-bottom: 0px;
 			}
@@ -32,7 +32,7 @@
 	float: left;
 	@include line-height(20px);
 	@media screen and (max-width: breakpoint(sm)) {
-		@include nopadding(15px 0px);
+		@include nopadding(11px 0px);
 	}
 	svg {
 		@media screen and (max-width: breakpoint(sm)) {
@@ -48,7 +48,7 @@
 .currency-container, .authentication-container {
 	@include nopadding(20px 0px 20px 0px);
 	@media screen and (max-width: breakpoint(sm)) {
-		@include nopadding(15px 0px);
+		@include nopadding(11px 0px);
 	}
 }
 .currency-container {

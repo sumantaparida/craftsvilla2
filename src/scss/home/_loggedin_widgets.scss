@@ -2,6 +2,9 @@
   margin-bottom: 30px;
   @media screen and (max-width: breakpoint(sm)) {
     margin-bottom: 15px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 15px;
   }
   .order-status-container {
     border: solid 1px rgba(0,0,0,0.14);
@@ -12,6 +15,7 @@
     .order-status-left {
       text-align: right;
       color: $cv-black87;
+      min-height: 37px;
       &::after {
         content: '';
         position: absolute;
@@ -67,6 +71,7 @@
       }
     }
     .order-status-right {
+      min-height: 37px;
       [class*=box-] {
         position: relative;
         padding-left: 45px;
@@ -122,6 +127,41 @@
             width: 28%;
           }
         }
+      }
+    }
+  }
+}
+//
+.discount-banner {
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  text-align: center;
+  padding-right: 30px;
+  @media screen and (max-width: breakpoint(sm)) {
+    padding: 0px;
+  }
+  h4 {
+    font-size: 16px;
+    margin: 12.5px 0px;
+    @media screen and (max-width: breakpoint(sm)) {
+      font-size: 12px;
+    }
+    span {
+      font-weight: normal;
+      display: inline-block;
+      color: $cv-black54;
+      letter-spacing: 1.2px;
+      @media screen and (max-width: breakpoint(sm)) {
+        width: inherit !important;
+        float: inherit !important;
+        letter-spacing: 1px;
+      }
+      &:nth-of-type(1), &:first-child {
+        color:$cv-p0;
+        margin-right: 6px;
+        font-weight: bold;
       }
     }
   }
