@@ -13,6 +13,38 @@
   $(".cms-index-index").attr('page', 'home');
   if($(window).width() < 1005){
     console.log("if");
+    // First Click
+		$("[first-click]").slice(0,1).addClass("active").next().show();
+		$(document).on("click", "a[first-click]", function(event){
+			event.preventDefault();
+			$("a[first-click]").next().slideUp(400);
+			$(this).next().stop(true, false).slideToggle(400);
+
+			if( $(this).hasClass("active") ){
+				$(this).removeClass("active");
+			} else{
+				$("a[first-click]").removeClass("active");
+				$(this).addClass("active");
+			};
+		});
+		// Second Click
+		$(document).on("click", "a[click-menu]", function(){
+			$("a[click-menu]").next().slideUp(200);
+			$(this).next().stop(true, false).slideToggle(200);
+
+			if( $(this).hasClass("active") ){
+				$(this).removeClass("active");
+			} else{
+				$("a[click-menu]").removeClass("active");
+				$(this).addClass("active");
+			};
+		});
+		/*========*/
+		$(".mobile-navbar, span[data-shop-by-close], div[mob-menu-overlay]").on("click", function(event){
+			event.stopPropagation();
+			$("body").toggleClass("animate-menu");
+			$("div[mob-menu-overlay]").fadeToggle( "slow", "linear" );
+		});
   }
   else {
     console.log("Else");

@@ -1,0 +1,100 @@
+/*owl-css*/
+.carousel-owl .left-button,.carousel-owl .right-button {
+    cursor: pointer;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 0px solid #B9B8B8;
+    font-size: 35px;
+    line-height: 74px;
+    background-color: rgba(255,255,255,0.5);
+    padding-left: 5px;
+    vertical-align: middle;
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px #dad8d8;
+    &:hover {
+      background-color: rgba(255,255,255,0.8);
+    }
+}
+
+.carousel-owl {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 100%;
+  .left-button {
+    left: 1px;
+    // padding-right: 8px;
+    // border-top-right-radius: 5px;
+    // border-bottom-right-radius: 5px;
+    // border-left: 0;
+    // box-shadow: 0px 0px 3px #dad8d8;
+  }
+  .right-button {
+    right: 1px;
+    // padding-left: 8px;
+    // border-right: 0px;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    // box-shadow: 0px 0px 3px #dad8d8;
+  }
+  .items-chunk {
+    position: relative;
+    display: none;
+    transition: .6s ease-in-out left;
+    -webkit-transition: .6s ease-in-out left;
+    -moz-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    width: 100%;
+  }
+  .active.left {
+    position: relative;
+    display: inline-block;
+    left: -100%;
+  }
+  .active.right {
+    position: relative;
+    display: inline-block;
+    left: 100%;
+  }
+  .active {
+    display: inline-block;
+    left: 0;
+  }
+  .next, .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .next {
+    left: 100%;
+  }
+  .prev {
+    left: -100%;
+  }
+  .next.left, .prev.right {
+    left: 0;
+  }
+  .owl-item {
+    display: inline-block;
+    width: 200px;
+  }
+  .disable {
+    opacity: 0.5;
+  }
+}
+.login-close {
+    float: right;
+    font-size: 21px;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    font-weight: 700;
+    cursor: pointer;
+}

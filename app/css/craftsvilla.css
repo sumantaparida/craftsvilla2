@@ -6879,7 +6879,7 @@ header {
   position: relative;
 }
 @media screen and (min-width: 760px) {
-  #mega-menu ul[data-mega-menu] > li.active > a::before {
+  #mega-menu ul[data-mega-menu] > li.active > a[first-click]::before {
     content: '';
     bottom: -3px;
     width: 0;
@@ -7686,6 +7686,98 @@ header {
 
 [page="home"] {
   background: #f6f6f6;
+}
+
+/*owl-css*/
+.carousel-owl .left-button, .carousel-owl .right-button {
+  cursor: pointer;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 0px solid #B9B8B8;
+  font-size: 35px;
+  line-height: 74px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 5px;
+  vertical-align: middle;
+  border-radius: 50px;
+  box-shadow: 0px 0px 3px #dad8d8;
+}
+.carousel-owl .left-button:hover, .carousel-owl .right-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-owl {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.carousel-owl .left-button {
+  left: 1px;
+}
+.carousel-owl .right-button {
+  right: 1px;
+}
+.carousel-owl .items-chunk {
+  position: relative;
+  display: none;
+  transition: .6s ease-in-out left;
+  -webkit-transition: .6s ease-in-out left;
+  -moz-transition: .6s ease-in-out left;
+  -o-transition: .6s ease-in-out left;
+  width: 100%;
+}
+.carousel-owl .active.left {
+  position: relative;
+  display: inline-block;
+  left: -100%;
+}
+.carousel-owl .active.right {
+  position: relative;
+  display: inline-block;
+  left: 100%;
+}
+.carousel-owl .active {
+  display: inline-block;
+  left: 0;
+}
+.carousel-owl .next, .carousel-owl .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+}
+.carousel-owl .next {
+  left: 100%;
+}
+.carousel-owl .prev {
+  left: -100%;
+}
+.carousel-owl .next.left, .carousel-owl .prev.right {
+  left: 0;
+}
+.carousel-owl .owl-item {
+  display: inline-block;
+  width: 200px;
+}
+.carousel-owl .disable {
+  opacity: 0.5;
+}
+
+.login-close {
+  float: right;
+  font-size: 21px;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .2;
+  filter: alpha(opacity=20);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .orange {
@@ -9038,6 +9130,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 }
 .product-details-container .pdp-right-container .pdp-block p .ratting-count {
   font-size: 12px;
+  margin-top: 2px;
 }
 .product-details-container .pdp-right-container .pdp-block ul.pdp-variant {
   list-style: none;
