@@ -1,6 +1,9 @@
 .widgets-app-download {
   background-color: $white100;
   padding: 0px;
+  @media screen and (max-width: breakpoint(sm)) {
+    height: 77px;
+  }
   [class*=app-] {
     &.app-left {
       img {
@@ -13,7 +16,7 @@
       text-align: center;
       padding: 35px 0px;
       @media screen and (max-width: breakpoint(sm)) {
-        padding: 7.5px 0px;
+        padding: 2.5px 0 0px 0;
       }
       .download-now {
         margin: 0px 0px 15px 0px;

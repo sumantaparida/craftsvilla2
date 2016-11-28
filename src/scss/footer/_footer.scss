@@ -86,9 +86,8 @@
 }
 // copy-right-container
 .copy-right-container {
-	background-color: $cv-p7;
 	padding: 13px 0px 10px 0px;
-	margin-top: 15px;
+	background-color: $cv-p7;
 	text-align: center;
 	font-size: $cv-caption1;
 	color: $cv-p8;
@@ -97,11 +96,11 @@
 	}
 }
 // Optional footer start
-[page="home"] {
-	.footer-container  {
-		background: #f6f6f6;
-	}
-}
+// [page="home"] {
+// 	.footer-container  {
+// 		background: #f6f6f6;
+// 	}
+// }
 //
 .top-of-page {
 	background-color: #fff;
@@ -131,7 +130,7 @@
 				width: 8px;
 				height: 15px;
 				@extend %sprite-image;
-				transform: rotate(90deg);
+				transform: rotate(-90deg);
 				background-position: -224px -282px;
 			}
 		}
@@ -170,3 +169,9 @@
 		max-height: 33px;
 	}
 }
+//
+#footer-top {
+	padding: 0px 0px 25px 0px;
+}
+// Seo Start
+@import "seoblock";

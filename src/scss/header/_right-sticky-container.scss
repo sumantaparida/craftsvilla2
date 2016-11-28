@@ -11,7 +11,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    @include height-auto(316px);
+    @include height-auto(220px);
     @include width-percent();
     ul {
       margin: 0px;

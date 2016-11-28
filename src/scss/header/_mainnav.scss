@@ -25,6 +25,21 @@
 			}
 		}
 	}
+	//
+	.text-left {
+		@media screen and (min-width: breakpoint(md)) {
+			width: 79%;
+		}
+	}
+	.text-right {
+		@media screen and (min-width: breakpoint(md)) {
+			width: 21%;
+		}
+	}
+
+	@media screen and (min-width: breakpoint(md)) {
+
+	}
 }
 .logo-container {
 	@include height-auto($h:auto !important);

@@ -85,8 +85,9 @@
       var count = number.length;
       console.log(data[i].name.data);
       // var d = 0;
-      if ( count ) {
+      if ( data[i].data ) {
         // ====
+        console.log( data[i].data )
         output+="<div data-sub-menu>";
         output+="<div class='container sub-menu-wrapper'>";
         output+="<ul>";
