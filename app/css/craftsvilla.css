@@ -6260,7 +6260,7 @@ header {
   width: 100%;
 }
 .craftsvilla-international .clrrouge {
-  color: #981937;
+  color: #cb224a;
 }
 .craftsvilla-international .left-section-international span {
   line-height: 33px;
@@ -6289,7 +6289,7 @@ header {
 }
 
 .craftsvilla-navbar {
-  background-color: #981937;
+  background-color: #cb224a;
 }
 @media screen and (max-width: 760px) {
   .craftsvilla-navbar {
@@ -6579,7 +6579,7 @@ header {
 }
 
 .currency-container .dropdown span {
-  color: #981937;
+  color: #cb224a;
   font-size: 16px;
 }
 .currency-container .dropdown .caret {
@@ -6666,7 +6666,7 @@ header {
   line-height: 18px;
   text-align: center;
   background-color: #FFFFFF;
-  color: #981937;
+  color: #cb224a;
   font-size: 10px;
   margin-top: -5px;
   font-style: normal;
@@ -6694,6 +6694,7 @@ header {
 @media screen and (max-width: 760px) {
   .authentication-container > ul > li [data-cart] {
     border: none;
+    margin-right: 10px;
   }
 }
 .authentication-container > ul > li [data-cart] .cv-cart {
@@ -6718,7 +6719,7 @@ header {
 }
 .authentication-container .dropdown-menu > li a:hover {
   background-color: inherit;
-  color: #981937;
+  color: #cb224a;
 }
 .authentication-container .dropdown-menu > .divider {
   margin: 1px 0px;
@@ -6745,7 +6746,7 @@ header {
 }
 
 #mega-menu {
-  background-color: #981937;
+  background-color: #cb224a;
   transition: transform 500ms ease 0s;
 }
 @media screen and (max-width: 760px) {
@@ -6869,7 +6870,7 @@ header {
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: #981937;
+    background-color: #cb224a;
     left: 0px;
     top: 8px;
   }
@@ -6989,7 +6990,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #981937;
+  background-color: #cb224a;
   left: 0px;
   top: 0px;
 }
@@ -7782,6 +7783,11 @@ header {
 .widgets-buyer-protection > div {
   padding: 0px 7.5px;
 }
+@media screen and (min-width: 760px) {
+  .widgets-buyer-protection > div {
+    padding: 0px 100px;
+  }
+}
 .widgets-buyer-protection [class*=assurance-] {
   position: relative;
   padding-left: 35px;
@@ -7806,30 +7812,34 @@ header {
 .widgets-buyer-protection [class*=assurance-].assurance-buyer::before {
   background-position: -156px -356px;
 }
-.widgets-buyer-protection [class*=assurance-].assurance-buyer::after {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  right: -7.5px;
-  top: 0;
-  bottom: 0;
-  background-color: #f0f0f0;
-  margin: auto;
+@media screen and (max-width: 760px) {
+  .widgets-buyer-protection [class*=assurance-].assurance-buyer::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -7.5px;
+    top: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    margin: auto;
+  }
 }
 .widgets-buyer-protection [class*=assurance-].assurance-secure::before {
   background-position: -194px -355px;
 }
-.widgets-buyer-protection [class*=assurance-].assurance-secure::after {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  right: -7.5px;
-  top: 0;
-  bottom: 0;
-  background-color: #f0f0f0;
-  margin: auto;
+@media screen and (max-width: 760px) {
+  .widgets-buyer-protection [class*=assurance-].assurance-secure::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -7.5px;
+    top: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    margin: auto;
+  }
 }
 .widgets-buyer-protection [class*=assurance-].assurance-easy::before {
   background-position: -235px -356px;
@@ -7837,6 +7847,39 @@ header {
 .widgets-buyer-protection strong {
   margin-top: 5px;
   display: block;
+}
+@media screen and (min-width: 760px) {
+  .widgets-buyer-protection strong {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .middle-divider::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 760px) {
+  .middle-divider::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    margin: auto;
+  }
 }
 
 .widgets-app-download {
@@ -8105,7 +8148,7 @@ header {
 }
 
 .bg-cv-primary {
-  background-color: #981937;
+  background-color: #cb224a;
 }
 
 #sidebar {
@@ -8146,7 +8189,7 @@ header {
   color: #9e9e9e;
 }
 #sidebar a:hover {
-  color: #981937;
+  color: #cb224a;
 }
 
 .filter-wrapper {
@@ -8445,7 +8488,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 #color a:hover,
 #discount a:hover,
 #price a:hover {
-  color: #981937;
+  color: #cb224a;
 }
 
 @media screen and (max-width: 760px) {
@@ -10094,7 +10137,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   background-color: #FFFFFF;
   font-family: "ProximaNova", sans-serif;
   border-top-style: solid;
-  border-top-color: #981937;
+  border-top-color: #cb224a;
   border-top-width: 2px;
   float: left;
   width: 100%;
@@ -10138,7 +10181,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   display: inline-block;
 }
 .footer-container ul li a:hover {
-  color: #981937;
+  color: #cb224a;
 }
 .footer-container ul li a span {
   color: #212121;
@@ -10170,7 +10213,7 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
   text-decoration: none;
 }
 .mobile-footer-container a:hover {
-  color: #981937;
+  color: #cb224a;
   text-decoration: none;
 }
 
@@ -10256,6 +10299,8 @@ ul.sub-menu > li > label > input[type=checkbox]:checked + label {
 .seo-section {
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: #f6f6f6;
 }
 .seo-section h1 {

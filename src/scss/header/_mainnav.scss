@@ -180,6 +180,7 @@
 				@include position;
 				@media screen and (max-width: breakpoint(sm)) {
 					border: none;
+					margin-right: 10px;
 				}
 				.cv-cart {
 					@include width-percent(23px);

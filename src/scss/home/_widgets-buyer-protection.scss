@@ -4,6 +4,9 @@
   border-radius: 2px;
   & > div {
     padding: 0px 7.5px;
+    @media screen and (min-width: breakpoint(sm)) {
+      padding: 0px 100px;
+    }
   }
   [class*=assurance-] {
     position: relative;
@@ -31,15 +34,17 @@
         background-position: -156px -356px;
       }
       &::after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        right: -7.5px;
-        top: 0;
-        bottom: 0;
-        background-color: #f0f0f0;
-        margin: auto;
+        @media screen and (max-width: breakpoint(sm)) {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          right: -7.5px;
+          top: 0;
+          bottom: 0;
+          background-color: #f0f0f0;
+          margin: auto;
+        }
       }
     }
     &.assurance-secure {
@@ -47,15 +52,17 @@
         background-position: -194px -355px;
       }
       &::after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        right: -7.5px;
-        top: 0;
-        bottom: 0;
-        background-color: #f0f0f0;
-        margin: auto;
+        @media screen and (max-width: breakpoint(sm)) {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          right: -7.5px;
+          top: 0;
+          bottom: 0;
+          background-color: #f0f0f0;
+          margin: auto;
+        }
       }
     }
     &.assurance-easy {
@@ -67,5 +74,38 @@
   strong {
     margin-top: 5px;
     display: block;
+    @media screen and (min-width: breakpoint(sm)) {
+      font-size: 14px;
+      margin-top: 12px;
+    }
+  }
+}
+//
+.middle-divider {
+  @media screen and (min-width: breakpoint(sm)) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #f0f0f0;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: breakpoint(sm)) {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #f0f0f0;
+      margin: auto;
+    }
   }
 }
