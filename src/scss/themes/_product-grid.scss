@@ -26,8 +26,10 @@
       padding: 0px;
       background-color: #fff;
       border: solid 0.9px transparent;
+      padding: 15px 0px 0px 0px;
       .product-img {
         position: relative;
+        background-color: #dedede;
         a {
           display: block;
           img {
@@ -36,11 +38,14 @@
         }
         .wishlist-product {
           position: absolute;
-          bottom: 15px;
+          top: 15px;
           right: 15px;
           border-radius: 50px;
           padding: 5px;
           background-color: rgba(255,255,255,0.8);
+          z-index: 9;
+          display: none;
+          cursor: pointer;
           a {
             display: block;
             text-decoration: none;
@@ -102,19 +107,23 @@
             &.product-off {
               font-weight: normal;
               color: $cv-p0;
+              font-size: $font-size-sm;
             }
           }
         }
       }
       &:hover {
         @media screen and (min-width: breakpoint(sm)){
-          box-shadow: 0 7px 17px 0 rgba(23,84,116,0.18);
+          box-shadow: 0 2px 17px 0 rgba(23,84,116,0.18);
           z-index: 50;
           border: solid 0.9px #f3f3f3;
           border-radius: 3px;
           .quickView {
             opacity: 1;
           }
+        }
+        .wishlist-product {
+            display: block;
         }
       }
     }
@@ -135,13 +144,13 @@
 .quickView {
   color: red;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
   width: 150px;
-  background-color: #fafafa;
+  background-color: rgba(250, 250, 250, 0.82);
   transition: opacity .5s ease;
   -moz-transition: opacity .5s ease;
   -webkit-transition: opacity .5s ease;
@@ -151,6 +160,6 @@
     display: block;
     text-decoration: none;
     color: $cv-p6;
-    padding: 11px 15px;
+    padding: 7.5px;
   }
 }

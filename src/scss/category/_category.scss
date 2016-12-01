@@ -40,11 +40,11 @@
           // border-top: solid 1px rgba(0,0,0,0.5);
           // border-bottom: solid 1px green;
           margin: 0px;
-          -webkit-transition: width 2s cubic-bezier(0.4, 0, 1, 1) 1s;
-          -moz-transition: width 2s cubic-bezier(0.4, 0, 1, 1) 1s;
-          -o-transition: width 2s cubic-bezier(0.4, 0, 1, 1) 1s;
-          -ms-transition: width 2s cubic-bezier(0.4, 0, 1, 1) 1s;
-          transition: width 2s cubic-bezier(0.4, 0, 1, 1) 1s;
+          -webkit-transition: width 1s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+          -moz-transition: width 1s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+          -o-transition: width 1s cubic-bezier(0.4, 0, 1, 1) 0.5s;
+          -ms-transition: width 1s cubic-bezier(0.4, 0, 1, 1) 10.5;
+          transition: width 1s cubic-bezier(0.4, 0, 1, 1) 0.5s;
           &::before {
             content: '';
             position: absolute;

@@ -31,6 +31,9 @@ body {
   color: $text-color;
   background-color: $body-bg;
   padding-top: 104px;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 // Reset fonts for relevant elements

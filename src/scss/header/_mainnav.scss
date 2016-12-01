@@ -28,17 +28,23 @@
 	//
 	.text-left {
 		@media screen and (min-width: breakpoint(md)) {
-			width: 79%;
+			width: 83.5%;
 		}
 	}
 	.text-right {
 		@media screen and (min-width: breakpoint(md)) {
-			width: 21%;
+			width: 16.5%;
 		}
 	}
-
-	@media screen and (min-width: breakpoint(md)) {
-
+	.logo-wrapper {
+		@media screen and (min-width: breakpoint(md)) {
+			width: 20%;
+		}
+	}
+	.mobile-search {
+		@media screen and (min-width: breakpoint(md)) {
+			width: 80%;
+		}
 	}
 }
 .logo-container {
@@ -58,6 +64,7 @@
 // Search bar
 @import '_searchbar.scss';
 @import '_mobile-search.scss';
+@import '_autosuggest.scss';
 // Search bar End
 
 .currency-container, .authentication-container {
@@ -140,6 +147,13 @@
 					@include position;
 					float: left;
 					line-height: 26px;
+					&.user-name {
+						width: 63px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						text-align: left;
+					}
 				}
 				.caret {
 					 margin-left: 0px;

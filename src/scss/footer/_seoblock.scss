@@ -1,19 +1,72 @@
+// Home Page SEO Start
+[page="home"] {
+  .seo-section {
+    h1 {
+      font-size: 14px;
+      color: $cv-black54;
+      font-weight: normal;
+    }
+  }
+}
+// Common SEO Start
 .seo-section {
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: $cv-p7;
+  // background-color: $cv-p7;
   h1 {
-    font-size: 14px;
-    color: $cv-black54;
+    font-size: $font-size-md;
+    color: $cv-black87;
     margin: 0px 0px 15px 0px;
     letter-spacing: 0.4px;
+    font-weight: bold;
   }
   p {
     font-size: 14px;
     color: $cv-black54;
     letter-spacing: 0.4px;
     margin: 0px;
+    a {
+      color: $cv-p6;
+      text-decoration: none;
+    }
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    li {
+      display: inline;
+      margin-right: 10px;
+      position: relative;
+      float: left;
+      &::after {
+        content: '/';
+        position: absolute;
+        right: -7px;
+        color: $cv-black100;
+        line-height: 24px;
+      }
+      &:last-child {
+        margin-right: 0px;
+        &::after {
+          content: '';
+          position: absolute;
+          right: -7px;
+          color: $cv-black100;
+          line-height: 24px;
+        }
+      }
+      a {
+        float: left;
+        color: $cv-black100;
+        text-decoration: none;
+        text-transform: capitalize;
+        display: block;
+        font-weight: normal;
+        line-height: 24px;
+      }
+    }
   }
 }

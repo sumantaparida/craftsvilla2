@@ -56,16 +56,6 @@
 			text-transform: uppercase;
 		}
 	}
-	// li:nth-child(1) {
-	// 	font-size: $cv-footer-heading;
-	// 	line-height: 1.64;
-	// 	letter-spacing: 0.8px;
-	// 	color: $footer_text_primary;
-	// 	margin-top: 25px;
-	// 	margin-bottom: 5px;
-	// 	border: 0 solid red;
-	// 	text-transform: uppercase;
-	// }
 }
 
 .mobile-footer-container {
@@ -95,83 +85,20 @@
 		margin: 0px;
 	}
 }
-// Optional footer start
-// [page="home"] {
-// 	.footer-container  {
-// 		background: #f6f6f6;
-// 	}
-// }
-//
-.top-of-page {
-	background-color: #fff;
-	border-radius: 2px;
-	padding: 0px;
-	text-align: center;
-	margin-bottom: 15px;
-	a {
-		display: block;
-		width: 100%;
-		height: 100%;
-		padding: 7.5px;
-		color: $cv-black38;
-		text-transform: uppercase;
-		font-weight: normal;
-		&:hover, &:focus {
-			text-decoration: none;
-		}
-		span {
-			display: block;
-			width: 100%;
-			text-align: center;
-			line-height: 15px;
-			.cv-top-arrow {
-				margin: auto;
-				display: inline-block;
-				width: 8px;
-				height: 15px;
-				@extend %sprite-image;
-				transform: rotate(-90deg);
-				background-position: -224px -282px;
-			}
-		}
-	}
-}
-// Optional footer end
 // Footer Myaccount Option start
-.myaccount-option {
-	border: solid 1px red;
-	margin-bottom: 15px;
-	background-color: #fff;
-	border-radius: 2px;
-	border: solid 1px $cv-black12;
-	padding: 0px;
-	ul {
-		li {
-			float: left;
-			width: 100%;
-			border-bottom: solid 1px $cv-black12;
-			a {
-				display: block;
-				height: 100%;
-				color: $cv-black100;
-				text-align: left;
-				padding: 15px;
-				line-height: 18px;
-			}
+.optional-footer {
+	background-color: $cv-p7;
+	.payment-option-massege {
+		p {
+			margin: 0px;
+			text-align: center;
+			max-height: 33px;
 		}
 	}
 }
 // Footer Payment Option Massege Start
-.payment-option-massege {
-	p {
-		margin: 0px;
-		text-align: center;
-		max-height: 33px;
-	}
-}
-//
-#footer-top {
-	padding: 0px 0px 25px 0px;
+.footer-bottom  {
+	margin-bottom: 15px;
 }
 // Seo Start
 @import "seoblock";

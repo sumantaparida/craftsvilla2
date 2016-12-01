@@ -24,8 +24,8 @@
         bottom: 0;
         margin: auto;
         width: 2px;
-        height: 100%;
-        background-color: $cv-liner;
+        height: 70%;
+        background-color: rgba(0,0,0,0.08);
         @extend %sprite-image;
         @media screen and (max-width: breakpoint(sm)) {
           background-color: transparent;

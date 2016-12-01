@@ -22,7 +22,7 @@
       > span {
         line-height: 15px;
         margin: 0px 10px;
-        padding: 12px 0px;
+        // padding: 12px 0px;
         display: inline-block;
         cursor: pointer;
         color: $cv-black54;
@@ -31,6 +31,9 @@
         -moz-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
+        &.sortBy {
+          padding: 12px 0px;
+        }
         &:first-child {
           margin: 0px;
           color: $cv-black100;
@@ -56,6 +59,9 @@
           }
         }
         > span {
+          &.effect {
+            padding: 12px 0px;
+          }
           span {
             position: relative;
             &:first-child {
@@ -78,8 +84,9 @@
             }
             //
             &.effect {
+              padding: 12px 0px;
               &::before {
-                bottom: -12px;
+                bottom: -1px;
               }
             }
           }
@@ -97,7 +104,7 @@
         float: left;
         line-height: 15px;
         margin-left: 5px;
-        padding: 6px 0px;
+        padding: 12px 0px 0px 0px;
       }
       .gridViewChange {
         color: $cv-p11;
@@ -106,7 +113,7 @@
             width: 20px;
             height: 20px;
             float: right;
-            margin: -3px 0px 0px 5px;
+            margin: -6px 0px 0px 10px;
             cursor: pointer;
           }
         }
@@ -123,7 +130,7 @@
     right: 0;
     width: 10%;
     height: 2px;
-    bottom: 0;
+    bottom: -12px;
     margin: auto;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;

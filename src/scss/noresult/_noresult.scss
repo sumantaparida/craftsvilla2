@@ -64,6 +64,7 @@
     ul {
       padding: 0px;
       list-style: none;
+      width: inherit;
       li {
         a {
           display: block;
@@ -81,5 +82,15 @@
         }
       }
     }
+  }
+  .uil-ellipsis {
+    width: inherit;
+    height: 50px;
+  }
+  .uil-ellipsis-desktop {
+    width: inherit;
+    position: relative;
+    height: 50px;
+    top: 20px;
   }
 }

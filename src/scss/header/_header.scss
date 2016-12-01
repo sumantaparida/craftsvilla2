@@ -20,7 +20,9 @@ header {
 // Common Page
 [content-wrapper] {
   & > .container {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+		@media screen and (max-width: breakpoint(sm)) {
+			padding-left: 7.5px;
+			padding-right: 7.5px;
+		}
   }
 }
